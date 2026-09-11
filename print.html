@@ -2,24 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>У воды — глэмпинги Новгородской области</title>
+  <title>Уехать из Новгорода на выходные</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
       --paper: oklch(96.8% 0.018 118);
-      --paper-2: oklch(93.4% 0.022 120);
       --ink: oklch(21% 0.042 152);
       --muted: oklch(36% 0.03 148);
       --rule: oklch(80% 0.028 132);
       --accent: oklch(44% 0.118 148);
-      --novgorod: oklch(42% 0.09 70);
       --ilmen: oklch(48% 0.1 232);
+      --korostyn: oklch(42% 0.09 70);
+      --russa: oklch(44% 0.08 40);
       --valdai: oklch(40% 0.09 155);
       --seliger: oklch(46% 0.1 250);
-      --far: oklch(44% 0.08 40);
-      --display: "Fraunces", "Iowan Old Style", Palatino, serif;
+      --display: "Fraunces", Palatino, serif;
       --body: "IBM Plex Sans", sans-serif;
       --mono: "IBM Plex Mono", ui-monospace, monospace;
     }
@@ -35,210 +34,50 @@
       print-color-adjust: exact;
     }
     @page { size: A5; margin: 10mm 10mm 14mm 10mm; }
-    h1, h2, h3 {
-      font-family: var(--display);
-      font-style: normal;
-      font-weight: 650;
-      letter-spacing: -0.03em;
-      line-height: 1.12;
-      margin: 0;
-    }
-    p { margin: 0 0 0.45em; }
-    a { color: var(--accent); text-underline-offset: 0.15em; }
-    a:visited { color: var(--accent); }
-
-    .cover {
-      min-height: 178mm;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 4mm 1mm 6mm;
-      page-break-after: always;
-      break-after: page;
-    }
-    .cover__meta {
-      font-family: var(--mono);
-      font-size: 8.5pt;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      border-bottom: 2px solid var(--ink);
-      padding-bottom: 8px;
-    }
-    .cover h1 {
-      font-size: 28pt;
-      max-width: 11ch;
-      margin-top: 16mm;
-      line-height: 1.04;
-    }
-    .cover__lede {
-      max-width: 34ch;
-      font-size: 12pt;
-      color: var(--muted);
-      margin-top: 8mm;
-    }
-    .cover__foot {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      border-top: 4px solid var(--ink);
-      box-shadow: 0 3px 0 var(--paper), 0 5px 0 var(--ink);
-      padding-top: 10px;
-      font-size: 10pt;
-    }
-    .cover__mark {
-      font-family: var(--display);
-      font-size: 22pt;
-    }
-
-    .sheet { page-break-after: always; break-after: page; }
-    .sheet:last-child { page-break-after: auto; }
-
-    .kicker {
-      font-family: var(--mono);
-      font-size: 8pt;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    h2 {
-      font-size: 16pt;
-      margin-bottom: 6px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid var(--ink);
-    }
-    h2 .dot {
-      display: inline-block;
-      width: 0.55em;
-      height: 0.55em;
-      margin-right: 0.35em;
-      vertical-align: 0.08em;
-      background: currentColor;
-    }
-
-    .picks {
-      display: grid;
-      gap: 0;
-      margin: 10px 0 16px;
-      border-top: 1px solid var(--rule);
-    }
-    .picks a {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 8px;
-      padding: 9px 0;
-      border-bottom: 1px solid var(--rule);
-      text-decoration: none;
-      color: var(--ink);
-      font-size: 12pt;
-    }
-    .picks a strong { font-weight: 500; }
+    h1, h2, h3 { font-family: var(--display); font-style: normal; font-weight: 650; letter-spacing: -0.03em; line-height: 1.12; margin: 0; }
+    p { margin: 0 0 0.4em; }
+    a { color: var(--accent); }
+    .cover { min-height: 178mm; display: flex; flex-direction: column; justify-content: space-between; padding: 4mm 1mm 6mm; page-break-after: always; }
+    .cover__meta { font-family: var(--mono); font-size: 8.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 8px; }
+    .cover h1 { font-size: 26pt; max-width: 12ch; margin-top: 16mm; }
+    .cover__lede { max-width: 36ch; font-size: 12pt; color: var(--muted); margin-top: 8mm; }
+    .cover__foot { display: flex; justify-content: space-between; align-items: end; border-top: 4px solid var(--ink); box-shadow: 0 3px 0 var(--paper), 0 5px 0 var(--ink); padding-top: 10px; font-size: 10pt; }
+    .cover__mark { font-family: var(--display); font-size: 20pt; }
+    .kicker { font-family: var(--mono); font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    h2 { font-size: 16pt; margin-bottom: 6px; padding-bottom: 5px; border-bottom: 2px solid var(--ink); }
+    .picks a { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
     .picks a span { color: var(--accent); font-family: var(--display); font-weight: 650; }
-
-    .toc-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0;
-      margin-top: 8px;
-    }
-    .toc-grid a {
-      display: block;
-      text-decoration: none;
-      color: var(--ink);
-      padding: 6px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .toc-grid small { display: block; color: var(--muted); font-size: 9pt; }
-
-    .legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 14px;
-      margin: 12px 0 4px;
-      font-family: var(--mono);
-      font-size: 8.5pt;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .legend i {
-      display: inline-block;
-      width: 9px;
-      height: 9px;
-      margin-right: 6px;
-      vertical-align: -1px;
-    }
-
-    .atlas-note { color: var(--muted); font-size: 10pt; margin: 8px 0 12px; }
-    .atlas svg { width: 100%; height: auto; }
-
-    .card {
-      break-inside: avoid;
-      page-break-inside: avoid;
-      background: var(--paper);
-      border-top: 5px solid var(--swatch, var(--ink));
-      padding: 10px 2px 12px;
-      margin: 0 0 8px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .card.novgorod { --swatch: var(--novgorod); }
-    .card.ilmen { --swatch: var(--ilmen); }
+    .note-box { background: oklch(93.4% 0.022 120); padding: 10px 12px; margin: 10px 0 14px; border-left: 4px solid var(--ink); font-size: 11pt; }
+    .card { break-inside: avoid; page-break-inside: avoid; border-top: 5px solid var(--swatch, var(--ink)); padding: 10px 2px 12px; margin: 0 0 8px; border-bottom: 1px solid var(--rule); }
+    .card.retlyo { --swatch: var(--ilmen); }
+    .card.korostyn { --swatch: var(--korostyn); }
+    .card.russa { --swatch: var(--russa); }
     .card.valdai { --swatch: var(--valdai); }
     .card.seliger { --swatch: var(--seliger); }
-    .card.far { --swatch: var(--far); }
-    .card__top {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      align-items: baseline;
-    }
+    .card__top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
     .card h3 { font-size: 14pt; max-width: 18ch; }
-    .price {
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-      font-weight: 500;
-      white-space: nowrap;
-    }
+    .price { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
     .price small { display: block; color: var(--muted); font-weight: 400; font-size: 8.5pt; }
     .place { color: var(--muted); font-size: 10pt; margin: 3px 0 6px; }
     .facts { margin: 0 0 8px; padding-left: 1.1em; }
     .facts li { margin: 0 0 2px; }
     .links { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 10.5pt; }
-    .links a { font-weight: 500; }
-    .note { font-size: 10pt; color: var(--muted); margin-top: 4px; }
-
-    .cluster-head { break-after: avoid; margin-top: 4mm; }
-    .h-novgorod { color: var(--novgorod); }
-    .h-ilmen { color: var(--ilmen); }
-    .h-valdai { color: var(--valdai); }
-    .h-seliger { color: var(--seliger); }
-    .h-far { color: var(--far); }
-
-    .colophon {
-      margin-top: 10mm;
-      padding-top: 8px;
-      border-top: 2px solid var(--ink);
-      font-size: 9.5pt;
-      color: var(--muted);
-    }
-
-    @media screen {
-      body { max-width: 148mm; margin: 16px auto; padding: 10mm; box-shadow: 0 0 0 1px var(--rule); }
-    }
+    .badge { display: inline-block; font-family: var(--mono); font-size: 7.5pt; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--ink); padding: 1px 5px; margin-right: 4px; }
+    .cluster-head { break-after: avoid; margin-top: 3mm; }
+    #retlyo { page-break-before: always; break-before: page; }
+    .colophon { margin-top: 8mm; padding-top: 8px; border-top: 2px solid var(--ink); font-size: 9.5pt; color: var(--muted); }
+    @media screen { body { max-width: 148mm; margin: 16px auto; padding: 10mm; box-shadow: 0 0 0 1px var(--rule); } }
   </style>
 </head>
 <body>
   <section class="cover">
     <div class="cover__meta">
-      <span>Полевой гид · выпуск 1</span>
+      <span>Полевой гид · выпуск 2</span>
       <span>Сентябрь 2026</span>
     </div>
     <div>
-      <h1>Девятнадцать мест у воды</h1>
-      <p class="cover__lede">Глэмпинги Новгородской области: шатры, сферы и A-фреймы. Карточки со ссылками — нажимаются в PDF.</p>
+      <h1>Уехать из города на выходные</h1>
+      <p class="cover__lede">Мы уже в Новгороде. Южный берег Ильменя, Старая Русса, Валдай. Двуспальная кровать. Бронировать сразу — выходные.</p>
     </div>
     <div class="cover__foot">
       <div class="cover__mark">У воды</div>
@@ -246,421 +85,160 @@
     </div>
   </section>
 
-  <section id="kak">
-    <div class="kicker">Как пользоваться</div>
-    <h2>Откройте карточку, нажмите ссылку</h2>
-    <p>Цены ориентировочные на сентябрь 2026. Перед поездкой сверяйте даты на сайте объекта. Карта на следующей странице схематичная, не для навигации.</p>
-
-    <div class="kicker" style="margin-top:14px">С чего начать</div>
+  <section>
+    <div class="kicker">Как решать</div>
+    <h2>Её список, потом соседние берега</h2>
+    <div class="note-box">Ретлё — домики не зашли (это база «Ретлё» / обычные щитовые, не Ильмера). Ильмера — в списке. Щастье — понравилось. Большой Камень — свободный домик с баней внутри и двуспальной 180×200. Две односпальные не рассматриваем.</div>
     <div class="picks">
-      <a href="#yurevskoe"><strong>Город рядом, всё под рукой</strong><span>Юрьевское подворье</span></a>
-      <a href="#kosmosfera"><strong>Вид на большое озеро</strong><span>КосмоСфера</span></a>
-      <a href="#truvor"><strong>Лес, Валдай, дороже</strong><span>Трувор · Середея</span></a>
-      <a href="#seliger-club"><strong>Селигер и тишина</strong><span>Seliger Club · Атмосфера</span></a>
-      <a href="#pole"><strong>Ближе к Петербургу, дешевле</strong><span>Поле Бесконечности</span></a>
+      <a href="#shaste"><strong>Ей зашло</strong><span>Щастье</span></a>
+      <a href="#kamen"><strong>Баня в доме + двуспальная</strong><span>Большой Камень</span></a>
+      <a href="#ilmera"><strong>Эко-барн, СПА рядом</strong><span>Ильмера</span></a>
+      <a href="#lakepark"><strong>Тот же берег, 8 км</strong><span>Lake Park</span></a>
+      <a href="#lesiluga"><strong>Уже в Старой Руссе</strong><span>Лес и Луга</span></a>
     </div>
-
-    <div class="kicker">Содержание</div>
-    <div class="toc-grid">
-      <a href="#novgorod">Новгород<small>9 мест · 15–40 минут до города</small></a>
-      <a href="#ilmen">Ильмень<small>2 места · Ретлё, Старая Русса</small></a>
-      <a href="#valdai">Валдай<small>2 места · нацпарк, Середейское</small></a>
-      <a href="#seliger">Селигер<small>2 места · Демянский округ</small></a>
-      <a href="#far">Дальше<small>4 места · Луга, Мста, Чучемля</small></a>
-    </div>
+    <p>Пригород Новгорода убран. До Ретлё около часа. Выходные разбирают — звонить сегодня.</p>
   </section>
 
-  <section class="sheet" id="karta" style="page-break-before: always;">
-    <div class="kicker">Ориентир</div>
-    <h2>Карта кластеров</h2>
-    <p class="atlas-note">Цвет карточки совпадает с берегом. Луга слева (к Петербургу), Валдай и Чучемля справа (к Москве), Ильмень под Новгородом, Селигер южнее.</p>
-    <div class="legend">
-      <span><i style="background:var(--novgorod)"></i>Новгород</span>
-      <span><i style="background:var(--ilmen)"></i>Ильмень</span>
-      <span><i style="background:var(--valdai)"></i>Валдай</span>
-      <span><i style="background:var(--seliger)"></i>Селигер</span>
-      <span><i style="background:var(--far)"></i>Дальше</span>
-    </div>
-    <svg viewBox="0 0 900 500" role="img" aria-label="Схема Новгородской области">
-      <path d="M90 210 C70 140 140 70 250 78 C370 50 520 44 650 92 C770 130 830 210 812 300 C790 400 650 455 470 448 C280 440 130 390 96 292 Z" fill="oklch(90% 0.035 128)" stroke="oklch(21% 0.042 152)" stroke-width="1.6"/>
-      <ellipse cx="310" cy="300" rx="78" ry="42" fill="oklch(72% 0.05 220)" stroke="oklch(21% 0.042 152)"/>
-      <ellipse cx="560" cy="350" rx="34" ry="22" fill="oklch(74% 0.045 230)" stroke="oklch(21% 0.042 152)"/>
-      <ellipse cx="610" cy="368" rx="22" ry="14" fill="oklch(74% 0.045 230)" stroke="oklch(21% 0.042 152)"/>
-      <ellipse cx="690" cy="230" rx="26" ry="16" fill="oklch(70% 0.04 200)" stroke="oklch(21% 0.042 152)"/>
-      <path d="M210 150 C230 130 270 140 250 170 C240 190 200 180 210 150 Z" fill="oklch(78% 0.06 145)"/>
-      <path d="M430 120 C455 100 500 118 470 150 C450 168 410 155 430 120 Z" fill="oklch(78% 0.06 145)"/>
-      <path d="M720 150 C745 132 790 148 760 180 C742 198 700 182 720 150 Z" fill="oklch(78% 0.06 145)"/>
-      <g font-family="IBM Plex Mono, monospace" font-size="13" fill="oklch(21% 0.042 152)">
-        <text x="160" y="478">к Петербургу</text>
-        <text x="760" y="70">к Москве</text>
-      </g>
-      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="500">
-        <rect x="118" y="148" width="70" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="118" y="148" width="6" height="22" fill="oklch(44% 0.08 40)"/>
-        <text x="130" y="163" fill="oklch(21% 0.042 152)">ЛУГА</text>
-        <rect x="268" y="178" width="108" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="268" y="178" width="6" height="22" fill="oklch(42% 0.09 70)"/>
-        <text x="280" y="193" fill="oklch(21% 0.042 152)">НОВГОРОД</text>
-        <rect x="268" y="318" width="96" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="268" y="318" width="6" height="22" fill="oklch(48% 0.1 232)"/>
-        <text x="280" y="333" fill="oklch(21% 0.042 152)">ИЛЬМЕНЬ</text>
-        <rect x="528" y="392" width="96" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="528" y="392" width="6" height="22" fill="oklch(46% 0.1 250)"/>
-        <text x="540" y="407" fill="oklch(21% 0.042 152)">СЕЛИГЕР</text>
-        <rect x="668" y="188" width="82" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="668" y="188" width="6" height="22" fill="oklch(40% 0.09 155)"/>
-        <text x="680" y="203" fill="oklch(21% 0.042 152)">ВАЛДАЙ</text>
-        <rect x="748" y="118" width="96" height="22" fill="oklch(96.8% 0.018 118)" stroke="oklch(21% 0.042 152)"/>
-        <rect x="748" y="118" width="6" height="22" fill="oklch(44% 0.08 40)"/>
-        <text x="760" y="133" fill="oklch(21% 0.042 152)">ЧУЧЕМЛЯ</text>
-      </g>
-    </svg>
-  </section>
-
-  <section id="novgorod">
+  <section id="retlyo">
     <div class="cluster-head">
-      <div class="kicker">Кластер</div>
-      <h2 class="h-novgorod"><span class="dot"></span>Новгород</h2>
-      <p>15–40 минут до Великого Новгорода. Удобно совместить с Юрьевым монастырём и «Витославлицами».</p>
+      <div class="kicker">Южный берег Ильменя</div>
+      <h2>Ретлё · ~1 час от Новгорода</h2>
+      <p>25–35 км до Старой Руссы. Глинт, пляж, четыре адреса в одной деревне.</p>
     </div>
 
-    <article class="card novgorod" id="yurevskoe">
+    <article class="card retlyo" id="shaste">
       <div class="card__top">
-        <h3>Юрьевское подворье</h3>
-        <div class="price">по датам<small>завтрак включён</small></div>
+        <h3>Щастье <span class="badge">ей зашло</span></h3>
+        <div class="price">от ~6 500 ₽<small>дом на двоих</small></div>
       </div>
-      <p class="place">Великий Новгород, Юрьевское ш., 6А</p>
-      <p>Сферы и панорамные домики у Юрьева монастыря. Баня с чаном, ресторан новгородской кухни, пляж на Волхове.</p>
+      <p class="place">Ильменская, 38В · первая линия</p>
+      <p>Панорамный дом-контейнер. Одна двуспальная кровать. На сайте: работает один дом. Тел. +7 911 790-00-78.</p>
       <ul class="facts">
-        <li>15 минут от вокзала; 2 часа из Петербурга по М-11</li>
-        <li>Всесезон, свой санузел</li>
-        <li>Тел. 8 8162 788-000</li>
+        <li>50 м до пляжа, Ильменский глинт</li>
+        <li>Кухня, тёплые полы, душ внутри</li>
       </ul>
       <div class="links">
-        <a href="https://tk-podvorie.ru/glemping">Сайт</a>
-        <a href="https://travel.yandex.ru/hotels/veliky-novgorod/iurevskoe-podvore/">Яндекс</a>
-        <a href="tel:+78162788000">Позвонить</a>
+        <a href="https://xn--80ak9ae6av.xn--p1acf/">Сайт</a>
+        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/shchaste/">Яндекс</a>
+        <a href="tel:+79117900078">Позвонить</a>
       </div>
     </article>
 
-    <article class="card novgorod" id="smaland">
+    <article class="card retlyo" id="kamen">
       <div class="card__top">
-        <h3>Smaland Хюгге Хаус</h3>
-        <div class="price">по датам<small>кухня в доме</small></div>
+        <h3>Большой Камень <span class="badge">баня в доме</span></h3>
+        <div class="price">от ~11 000 ₽<small>мини-коттедж</small></div>
       </div>
-      <p class="place">д. Чечулино, ул. Речная, 15</p>
-      <p>A-фреймы и барнхаусы на Питьбе. Кухня и санузел в каждом доме, у части — сауна.</p>
+      <p class="place">Вишнёвая, 34</p>
+      <p>Мини-коттедж: спальня с кроватью 180×200, диван, баня на дровах внутри. В больших домах — сауна и бассейн или купель. Тел. +7 921 346-45-72.</p>
       <ul class="facts">
-        <li>20–30 минут от центра Новгорода</li>
-        <li>Река Питьба, баня-бочка</li>
+        <li>70 км от Новгорода, 25 км от Старой Руссы</li>
+        <li>Рейтинг 5.0 · 156 отзывов</li>
       </ul>
       <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/">Яндекс</a>
+        <a href="https://bolshoj-kamen.ru/">Сайт</a>
+        <a href="https://bolshoj-kamen.ru/booking">Бронь</a>
+        <a href="tel:+79213464572">Позвонить</a>
       </div>
     </article>
 
-    <article class="card novgorod" id="moiseevichi">
+    <article class="card retlyo" id="ilmera">
       <div class="card__top">
-        <h3>Моисеевичи Life</h3>
-        <div class="price">по датам<small>семья / компания</small></div>
+        <h3>Ильмера <span class="badge">двуспальная</span></h3>
+        <div class="price">от 6 000 ₽<small>барн на двоих</small></div>
       </div>
-      <p class="place">д. Моисеевичи, 15</p>
-      <p>A-frame 2022 года на 75 сотках. Пруд, баня с чаном. Рейтинг на Яндексе около 4.9.</p>
+      <p class="place">Ильменская, 52</p>
+      <p>Барн 28 м²: двуспальная, диван, санузел и камин внутри. ТермоСПА отдельно: парная, фурако, финская сауна. Тариф «Свидание». Тел. +7 921 197-87-00.</p>
       <ul class="facts">
-        <li>15 км от города, Ильмень 5 км</li>
-        <li>Баня с сибирским чаном</li>
+        <li>~200 м до воды, галька</li>
+        <li>100% предоплата, отмена за сутки</li>
       </ul>
       <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/moiseevichi-life/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="lisia">
-      <div class="card__top">
-        <h3>Лисья Гора</h3>
-        <div class="price">по датам<small>есть палаточный лагерь</small></div>
-      </div>
-      <p class="place">Ракомское с.п., ~10 км от города</p>
-      <p>Домики и палаточный лагерь у озера. Сапы, катамараны, капсюльная баня у воды.</p>
-      <ul class="facts">
-        <li>Автобус 108 до остановки «Лисья Гора»</li>
-        <li>Капсюльная баня на дровах</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/lisia-gora/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="rustic">
-      <div class="card__top">
-        <h3>Рустик Кантри Клаб</h3>
-        <div class="price">по датам<small>барнхаус</small></div>
-      </div>
-      <p class="place">д. Рушиново, ул. Майская, 13</p>
-      <p>Барнхаусы с панорамными окнами у Вишеры. Кухня, мангал, деревянная баня и купель.</p>
-      <ul class="facts">
-        <li>Река Вишера: купание, рыбалка, сап</li>
-        <li>Смешанный лес</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/grinbruk/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="dukh">
-      <div class="card__top">
-        <h3>Дух Природы</h3>
-        <div class="price">по датам<small>ретриты</small></div>
-      </div>
-      <p class="place">д. Рушиново, ул. Хвойная, 16</p>
-      <p>Эко-парк в славянской тематике. A-фреймы, сафари-тенты, коза-ферма, ретриты.</p>
-      <ul class="facts">
-        <li>Двухэтажная баня с купелями</li>
-        <li>Та же Рушиново, что Кантри Клаб</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/dukh-prirody/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="dyhanie">
-      <div class="card__top">
-        <h3>Второе дыхание</h3>
-        <div class="price">по датам<small>2–3 гостя</small></div>
-      </div>
-      <p class="place">д. Васильевское</p>
-      <p>Сканди-дома 18 и 32 м² на Веряже. Банный чан под открытым небом.</p>
-      <ul class="facts">
-        <li>Река Веряжа</li>
-        <li>Горячие бани и чан</li>
-      </ul>
-      <div class="links">
-        <a href="https://sutochno.ru/front/searchapp/detail/1905410">Суточно.ру</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="belka">
-      <div class="card__top">
-        <h3>Белка</h3>
-        <div class="price">по датам<small>есть питание</small></div>
-      </div>
-      <p class="place">Новгородский район, 490-й км М-10</p>
-      <p>Сосны, треугольные домики и сафари-тенты. Кафе, баня, два пруда.</p>
-      <ul class="facts">
-        <li>Русская баня с купелью</li>
-        <li>Зимой на прудах коньки</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/belka/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card novgorod" id="plashkino">
-      <div class="card__top">
-        <h3>A-фрейм в Плашкино</h3>
-        <div class="price">по датам<small>один дом</small></div>
-      </div>
-      <p class="place">д. Плашкино, СТ «Факел», ул. Солнечная, 52</p>
-      <p>Отдельный дом 2023 года у соснового леса. До 5 гостей, «умный дом», баня и купель.</p>
-      <ul class="facts">
-        <li>Около 30 км от Новгорода</li>
-      </ul>
-      <div class="links">
-        <a href="https://sutochno.ru/front/searchapp/detail/1534159">Суточно.ру</a>
+        <a href="https://ilmerapark.ru/">Сайт</a>
+        <a href="https://ilmerapark.ru/booking">Бронь</a>
+        <a href="tel:+79211978700">Позвонить</a>
       </div>
     </article>
   </section>
 
-  <section id="ilmen">
+  <section>
     <div class="cluster-head">
-      <div class="kicker">Кластер</div>
-      <h2 class="h-ilmen"><span class="dot"></span>Ильмень</h2>
-      <p>Деревня Ретлё, Старорусский район. 73 км от Новгорода, 28 км от Старой Руссы.</p>
+      <div class="kicker">Тот же берег и город-курорт</div>
+      <h2>Коростынь и Старая Русса</h2>
     </div>
 
-    <article class="card ilmen" id="kosmosfera">
+    <article class="card korostyn" id="lakepark">
       <div class="card__top">
-        <h3>КосмоСфера</h3>
-        <div class="price">от 7 900 ₽<small>купол на 1–4</small></div>
+        <h3>Lake Park</h3>
+        <div class="price">от ~6 200 ₽<small>дом, двуспальная</small></div>
       </div>
-      <p class="place">д. Ретлё, ул. Ильменская, 19</p>
-      <p>Купола на высоком берегу, рядом с Ильменским глинтом. Пляж, экотропа, сапы.</p>
-      <ul class="facts">
-        <li>Часть куполов с биотуалетом; душ в санитарной зоне</li>
-        <li>Есть доступный купол</li>
-      </ul>
+      <p class="place">Коростынь, Озёрная, 54 · ~8 км от Ретлё</p>
+      <p>Дома с двуспальной кроватью, терраса, барбекю. Рейтинг 4.9 · 239 отзывов. Баня на дровах с видом на Ильмень. Тел. +7 921 698-14-98.</p>
       <div class="links">
-        <a href="https://parkglampov.ru/">Сайт</a>
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/kosmosfera-230992455704/">Яндекс</a>
+        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/">Яндекс</a>
       </div>
     </article>
 
-    <article class="card ilmen" id="ilmera">
+    <article class="card russa" id="lesiluga">
       <div class="card__top">
-        <h3>Ильмера</h3>
-        <div class="price">от ~2 900 ₽<small>барнхаус / палатка</small></div>
+        <h3>Лес и Луга</h3>
+        <div class="price">от 6 500 ₽<small>дом у реки</small></div>
       </div>
-      <p class="place">д. Ретлё, ул. Ильменская, 52Б</p>
-      <p>Шесть барнхаусов плюс площадки для палаток и автодомов. Круглый год.</p>
-      <ul class="facts">
-        <li>Берег Ильменя, рыбалка</li>
-        <li>Та же Ретлё, что КосмоСфера</li>
-      </ul>
+      <p class="place">Старая Русса, река Порусья</p>
+      <p>Не Ильмень: река, поля, лес. Дома в 50–100 м друг от друга, только семьи. Банный комплекс с чаном на берегу. Рядом музей Достоевского и источники. Тел. 8 981 715-05-09.</p>
       <div class="links">
-        <a href="https://ubook.ru/russia/retlyo/ilmera1">ubook</a>
+        <a href="https://les-i-luga.ru/">Сайт</a>
+        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/les-i-luga/">Яндекс</a>
       </div>
     </article>
   </section>
 
-  <section id="valdai">
+  <section>
     <div class="cluster-head">
-      <div class="kicker">Кластер</div>
-      <h2 class="h-valdai"><span class="dot"></span>Валдай</h2>
-      <p>Национальный парк, Середейское озеро, реликтовые сосны.</p>
+      <div class="kicker">Если Ретлё разобрали</div>
+      <h2>Валдай и Селигер</h2>
+      <p>Дальше по времени (~2 часа). Имеет смысл запасным планом на выходные.</p>
     </div>
 
     <article class="card valdai" id="truvor">
       <div class="card__top">
         <h3>Трувор</h3>
-        <div class="price">от ~15 000 ₽<small>большой дом, будни</small></div>
+        <div class="price">от ~15 000 ₽<small>шале, Валдай</small></div>
       </div>
-      <p class="place">д. Полосы, 70 · Середейское озеро</p>
-      <p>Шале и зеркальный дом. Банный комплекс с ледяной купелью. Зимой работает.</p>
-      <ul class="facts">
-        <li>Выходные от ~25 000 ₽</li>
-        <li>Летом — подиумы под палатки</li>
-      </ul>
+      <p class="place">д. Полосы, Середейское озеро</p>
+      <p>Нацпарк, сосны, банный комплекс. Уточняйте кровать: в части домов двуспальная. Выходные дороже.</p>
       <div class="links">
         <a href="https://glampi.ru/catalog/glempings/truvor-glemping-valday/">glampi.ru</a>
         <a href="https://travel.yandex.ru/hotels/novgorod-oblast/truvor/">Яндекс</a>
       </div>
     </article>
 
-    <article class="card valdai" id="seredeya">
+    <article class="card valdai">
       <div class="card__top">
         <h3>Середея Парк</h3>
-        <div class="price">11 500 / 5 000 ₽<small>домик / подиум</small></div>
+        <div class="price">11 500 ₽<small>домик нацпарка</small></div>
       </div>
-      <p class="place">Нацпарк «Валдайский», Середейское озеро</p>
-      <p>Официальный глэмпинг парка. Три всесезонных домика и шесть подиумов. Пирс.</p>
-      <ul class="facts">
-        <li>От станции Валдай на такси</li>
-        <li>Предоплата за сутки, при отмене не возвращается</li>
-        <li>Тел. +7 81666 2-86-71</li>
-      </ul>
+      <p class="place">Середейское озеро</p>
+      <p>Три всесезонных домика, пирс. Предоплата за сутки, при отмене не возвращается. Тел. +7 81666 2-86-71.</p>
       <div class="links">
         <a href="https://www.valdaypark.ru/accommodation/glamping">Сайт парка</a>
-        <a href="https://www.valdaypark.ru/rules">Правила</a>
-        <a href="tel:+78166628671">Позвонить</a>
-      </div>
-    </article>
-  </section>
-
-  <section id="seliger">
-    <div class="cluster-head">
-      <div class="kicker">Кластер</div>
-      <h2 class="h-seliger"><span class="dot"></span>Селигер</h2>
-      <p>Новгородская сторона, Демянский округ, Полновский плёс. Дорога длиннее, чем до Ильменя.</p>
-    </div>
-
-    <article class="card seliger" id="seliger-club">
-      <div class="card__top">
-        <h3>Seliger Club</h3>
-        <div class="price">по датам<small>завтрак включён</small></div>
-      </div>
-      <p class="place">д. Кривая Клетка, ул. Набережная, 31А</p>
-      <p>Эко-детокс на плёсе. Сканди-дома, лодки. Огонь на территории запрещён — водные грили.</p>
-      <ul class="facts">
-        <li>Зарядки для электромобилей</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/seliger-klub/">Яндекс</a>
       </div>
     </article>
 
-    <article class="card seliger" id="atmosfera">
+    <article class="card seliger">
       <div class="card__top">
         <h3>Атмосфера</h3>
         <div class="price">от ~6 200 ₽<small>геокупол</small></div>
       </div>
-      <p class="place">д. Приозёрная, ул. Лазурная, 1</p>
-      <p>Три геокупола: Марс, Юпитер, Сатурн. Свой санузел, тёплый пол. Берег заболоченный, пляж в Зыковщине.</p>
+      <p class="place">Приозёрная, Демянск · Селигер</p>
+      <p>Купол «Сатурн» на двоих. Свой санузел. Берег заболоченный.</p>
       <div class="links">
         <a href="https://travel.yandex.ru/hotels/novgorod-oblast/glemping-atmosfera-seliger/">Яндекс</a>
       </div>
     </article>
-  </section>
-
-  <section id="far">
-    <div class="cluster-head">
-      <div class="kicker">Кластер</div>
-      <h2 class="h-far"><span class="dot"></span>Дальше</h2>
-      <p>Луга, Мста, Чучемля. Тише и часто дешевле. Поле Бесконечности ближе к Петербургу и только летом.</p>
-    </div>
-
-    <article class="card far" id="pole">
-      <div class="card__top">
-        <h3>Поле Бесконечности</h3>
-        <div class="price">от 2 500 ₽<small>шатёр, май–сентябрь</small></div>
-      </div>
-      <p class="place">Батецкий район, д. Большой Волок</p>
-      <p>Семь шатров на 37 гектарах у Луги. Около 2 часов из Петербурга.</p>
-      <ul class="facts">
-        <li>Сапы, разнотравье, кино под небом</li>
-        <li>Тел. +7 921 348-98-84</li>
-      </ul>
-      <div class="links">
-        <a href="https://novgorod.travel/hotels/glemping-pole-beskonechnosti">novgorod.travel</a>
-        <a href="https://vk.com/8glamp">ВКонтакте</a>
-        <a href="tel:+79213489884">Позвонить</a>
-      </div>
-    </article>
-
-    <article class="card far" id="vidomlicy">
-      <div class="card__top">
-        <h3>Видомлицы</h3>
-        <div class="price">по датам<small>сафари-тент</small></div>
-      </div>
-      <p class="place">Любытинский район, д. Видомлицы</p>
-      <p>Десять сафари-тентов на Мсте. Электропростыни, мангал, пляж в пяти минутах.</p>
-      <ul class="facts">
-        <li>~2 часа от Новгорода, ~3 от Петербурга</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card far" id="chuchemlya">
-      <div class="card__top">
-        <h3>Chuchemlya eco village</h3>
-        <div class="price">по датам<small>4 дома</small></div>
-      </div>
-      <p class="place">Мошенской округ, д. Чучемля</p>
-      <p>Четыре дома на озере, в том числе мини-дом на воде с сауной. Тихо: мало соседей.</p>
-      <ul class="facts">
-        <li>Около 3,5 часов от Новгорода</li>
-      </ul>
-      <div class="links">
-        <a href="https://travel.yandex.ru/hotels/novgorod-oblast/chuchemlya-eco-village-103726346210/">Яндекс</a>
-      </div>
-    </article>
-
-    <article class="card far" id="berezhok">
-      <div class="card__top">
-        <h3>Красный Бережок</h3>
-        <div class="price">по датам<small>парк-отель</small></div>
-      </div>
-      <p class="place">Маловишерский район, д. Красный Бережок</p>
-      <p>Парк-отель в соснах на Мсте. Скорее коттеджи, чем классический глэмпинг. Около 95 км от Новгорода.</p>
-      <div class="links">
-        <a href="https://domik.travel/russia/novgorodskaya/krasnyy-berejok">domik.travel</a>
-      </div>
-    </article>
 
     <div class="colophon">
-      <p>Сводный гид, сентябрь 2026. Живая страница с фильтрами: <a href="https://voctenzuk.github.io/glemingi-novgorod/">voctenzuk.github.io/glemingi-novgorod</a></p>
-      <p>Каталоги: glampinginfo.ru · novgorod.travel · Яндекс Путешествия · Отелло</p>
+      <p>Выпуск 2, сентябрь 2026. Пригород Новгорода убран. Живая страница: <a href="https://voctenzuk.github.io/glemingi-novgorod/">voctenzuk.github.io/glemingi-novgorod</a></p>
     </div>
   </section>
 </body>
