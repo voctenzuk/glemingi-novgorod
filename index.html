@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Уехать из Новгорода на выходные — Ильмень, Старая Русса, Валдай</title>
-  <meta name="description" content="Короткий гид: Ретлё, Старая Русса, Коростынь, Валдай. Двуспальная кровать, природа, бронировать выходные сразу.">
+  <meta name="description" content="Smaland, Трувор, Белка, КосмоСфера — отзывы, двуспальная кровать, выходные из Новгорода.">
   <meta property="og:title" content="Уехать из Новгорода на выходные">
-  <meta property="og:description" content="Щастье, Ильмера, Большой Камень и соседние берега. Без пригорода Новгорода.">
+  <meta property="og:description" content="Её список: Smaland, Трувор, Белка, КосмоСфера. Отзывы внутри карточки.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://voctenzuk.github.io/glemingi-novgorod/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
   <header class="mast">
     <div class="wrap">
       <div class="mast__meta">
-        <span>Полевой гид · выпуск 2</span>
+        <span>Полевой гид · выпуск 3</span>
         <span>Из Новгорода · сентябрь 2026</span>
         <span>выходные бронировать сразу</span>
       </div>
@@ -36,7 +36,7 @@
       </div>
       <aside class="hero__aside">
         <strong>Она уже смотрела</strong>
-        <p>Smaland — «я за», даже зимой, от двух ночей. Трувор близок по желаниям, на Яндексе номеров нет — брать на сайте. Белка — треугольные двухэтажные, места есть. КосмоСфера — поле, сейчас пусто, на лето.</p>
+        <p>Smaland — «я за», даже зимой, от двух ночей. Трувор близок, на Яндексе пусто — сайт. Белка — треугольные двухэтажные, места есть. КосмоСфера — поле, на лето. В карточке: оценка, одна цитата, плюсы и минусы.</p>
         <div class="hero__picks">
           <a href="#place-smaland">Smaland Хюгге Хаус</a>
           <a href="#place-truvor">Трувор</a>
@@ -86,6 +86,7 @@
     <div class="filters">
       <div class="wrap filters__row" role="toolbar" aria-label="Фильтры">
         <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="her" data-value="yes" aria-pressed="false">Её список</button>
         <button class="chip" type="button" data-filter="cluster" data-value="chechulino" aria-pressed="false">Чечулино</button>
         <button class="chip" type="button" data-filter="cluster" data-value="belaya-gora" aria-pressed="false">Белка</button>
         <button class="chip" type="button" data-filter="cluster" data-value="retlyo" aria-pressed="false">Ретлё</button>
@@ -108,7 +109,7 @@
   <footer class="wrap colophon">
     <div>
       <div class="colophon__mark">У воды</div>
-      <p>Сводный гид, сентябрь 2026. Цены ориентировочные, перед поездкой сверяйте даты на сайте объекта. Карта схематичная, не для навигации.</p>
+      <p>Выпуск 3, сентябрь 2026. Отзывы — оценка на карточке, цитата и плюсы/минусы внутри. Цены ориентировочные. Карта схематичная.</p>
     </div>
     <div>
       <h2>Каталоги</h2>
@@ -140,27 +141,54 @@
     const PLACES = [
       {
         id: "smaland", cluster: "chechulino", clusterLabel: "Чечулино · 20 мин",
-        name: "Smaland Хюгге Хаус", pick: true, bed: "double",
+        name: "Smaland Хюгге Хаус", pick: true, her: true, herLabel: "я за", bed: "double",
         place: "д. Чечулино, ул. Речная, 15",
-        blurb: "Она: «я за», хотела бы и зимой, пишут от 2 ночей. Яндекс 4.9 · 91 отзыв. Двуспальная на втором этаже, диван внизу. Тёплый пол — в мороз тоже тепло. Винил, кухня, терраса, речка в 200 м. До кремля 20–30 минут.",
+        blurb: "Она: «я за», хотела бы и зимой. Двуспальная на втором этаже, диван внизу. Винил, кухня, терраса, речка в 200 м.",
         facts: [
           ["water", "Речка Питьба ~200 м"],
-          ["car", "10–15 мин по новой дороге от Новгорода"],
+          ["car", "20–30 мин до кремля"],
           ["bath", "Сауна в части домов / баня-бочка"]
         ],
         price: "от 4 990 ₽", priceNote: "от 2 ночей", season: "year",
         tel: "79119237640", telLabel: "+7 911 923-76-40",
-        extra: "Отзывы: «просто приехать и ничего не решать», винил, кот Оскар, тепло в мороз за счёт тёплого пола. Тихо, хозяин на связи. Telegram @smaland_rent. Форумов нет — живые отзывы на Яндексе.",
+        rating: { score: "4.9", count: "91", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/" },
+        quote: { text: "Даже в мороз нам было очень тепло — греется тёплым полом.", meta: "гость · tropki · 2025" },
+        plus: ["тихо, всё уже внутри", "двуспальная на 2 этаже", "тепло зимой"],
+        minus: ["от двух ночей", "деревня, не берег озера"],
+        extra: "Telegram @smaland_rent. Форумов нет — живые отзывы на Яндексе.",
         links: [
           ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/"],
           ["Сайт", "https://smaland.rent/"]
         ]
       },
       {
+        id: "truvor", cluster: "valdai", clusterLabel: "Валдай",
+        name: "Трувор", pick: true, her: true, herLabel: "близко", bed: "double",
+        place: "д. Полосы, Середейское озеро",
+        blurb: "Она: уже близко к желаниям. На Яндексе номеров нет — сайт или телефон. Есть Дом Мини на двоих.",
+        facts: [
+          ["forest", "Реликтовые сосны, тропа вокруг озера"],
+          ["car", "~2 часа от Новгорода"],
+          ["bath", "Двухуровневая парная и купель"]
+        ],
+        price: "от ~15 000 ₽", priceNote: "выходные дороже", season: "year",
+        tel: "79524885000", telLabel: "+7 952 488-50-00",
+        rating: { score: "5.0", count: "270", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/" },
+        quote: { text: "Для двоих домик достаточный, чтобы провести романтический вечер.", meta: "Ольга · 101hotels · янв 2026" },
+        plus: ["озеро и сосны", "Mini-дом на двоих", "VK: создан для пар"],
+        minus: ["нет интернета", "комары, слышимость", "смотри дом — не куб за 70 тыс"],
+        extra: "Бронь только truvor.camp, не Яндекс. Жёсткий отзыв про пластик — большой дом на праздники.",
+        links: [
+          ["Сайт", "https://truvor.camp/"],
+          ["VK", "https://vk.com/truvorglamping"],
+          ["Яндекс отзывы", "https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/"]
+        ]
+      },
+      {
         id: "belka", cluster: "belaya-gora", clusterLabel: "Белая Гора · М-10",
-        name: "Белка", pick: true, bed: "double",
+        name: "Белка", pick: true, her: true, herLabel: "места есть", bed: "double",
         place: "д. Белая Гора, трасса М-10, 491-й км",
-        blurb: "Она: треугольные двухэтажные домики, прикольно, места есть. Яндекс 5.0 · 203 отзыва. В спальнях широкая двуспальная. Баня, пруд, лес. ~30 минут от города. Минусы из отзывов: интернет слабый, дорога с ямами.",
+        blurb: "Она: треугольные двухэтажные домики, прикольно, места есть. В спальнях широкая двуспальная. Баня, пруд, лес.",
         facts: [
           ["forest", "Сосны, грибы, пруд с рыбой"],
           ["car", "~30 мин от Новгорода, рядом трасса"],
@@ -168,7 +196,11 @@
         ],
         price: "от ~6 000 ₽", priceNote: "есть свободные", season: "year",
         tel: "79991961921", telLabel: "+7 999 196-19-21",
-        extra: "101hotels 9.3 · 32 отзыва: хозяин Александр встречает сам, баня, пруд, можно с питомцем. Минусы: интернет слабый, подъезд разбит лесовозами. Сайт bazabelka.ru, ещё тел. +7 911 970-78-00. VK живой группы нет.",
+        rating: { score: "5.0", count: "203", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/belka/" },
+        quote: { text: "Идеально подходит для выходных вдвоём.", meta: "Павел · 101hotels · авг 2025" },
+        plus: ["хозяин встречает сам", "баня и пруд", "широкая двуспальная"],
+        minus: ["интернет слабый", "подъезд разбит лесовозами"],
+        extra: "Ещё тел. +7 911 970-78-00. VK живой группы нет.",
         links: [
           ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/belka/"],
           ["Сайт", "https://bazabelka.ru/"]
@@ -176,16 +208,20 @@
       },
       {
         id: "kosmosfera", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "КосмоСфера", pick: false, bed: "double",
+        name: "КосмоСфера", pick: false, her: true, herLabel: "на лето", bed: "double",
         place: "д. Ретлё, ул. Ильменская, 19",
-        blurb: "Она: на поле, свободных нет. Место пока не зацепило. Летом на мероприятия — можно. Отзывы: закаты и сферы да, удобства спорные. В части куполов душ/туалет общие, в бане не везде вода, озеро здесь мелкое.",
+        blurb: "Она: на поле, свободных нет, место пока не зацепило. Летом на мероприятия — можно.",
         facts: [
           ["water", "Ильмень рядом, глубина в этом месте < 1 м"],
           ["car", "~1 час от Новгорода"],
           ["bath", "Баня есть; удобства не во всех сферах свои"]
         ],
         price: "от ~6 900 ₽", priceNote: "сейчас нет мест", season: "year",
-        extra: "101hotels 9.6: закаты, сферы, персонал. Минусы совпадают с её: поле, в части куполов душ общий, озеро < 1 м, слепни. VK: vk.com/parkglampov. На лето, не на эти выходные.",
+        rating: { score: "9.6", count: "11", source: "101hotels", url: "https://101hotels.com/opinions/hotel/retlyo/zagorodniy_otel_glemping_park_kosmosfera.html" },
+        quote: { text: "Озеро здесь глубже метра не наберёшь — по-настоящему не поплаваешь.", meta: "Konstantin · OneTwoTrip · 2023" },
+        plus: ["закаты с Ильменя", "сферы с панорамой", "персонал"],
+        minus: ["поле", "в части куполов душ общий", "слепни"],
+        extra: "На лето, не на эти выходные.",
         links: [
           ["Сайт", "https://parkglampov.ru/"],
           ["VK", "https://vk.com/parkglampov"]
@@ -193,7 +229,7 @@
       },
       {
         id: "shaste", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "Щастье", pick: true, bed: "double",
+        name: "Щастье", pick: true, herLabel: "ей зашло", bed: "double",
         place: "д. Ретлё, ул. Ильменская, 38В",
         blurb: "Ей зашло. Панорамный дом-контейнер на первой береговой линии, в Ильменском глинте. Одна двуспальная кровать, не две односпальные. На сайте писали: работает один дом — бронировать сразу.",
         facts: [
@@ -221,7 +257,8 @@
         ],
         price: "от ~11 000 ₽", priceNote: "мини-коттедж с баней", season: "year",
         tel: "79213464572", telLabel: "+7 921 346-45-72",
-        extra: "Рейтинг 5.0, 156 отзывов. Сайт bolshoj-kamen.ru",
+        rating: { score: "5.0", count: "156", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/usadba-bolshoi-kamen/" },
+        extra: "Сайт bolshoj-kamen.ru",
         links: [
           ["Сайт", "https://bolshoj-kamen.ru/"],
           ["Бронь", "https://bolshoj-kamen.ru/booking"],
@@ -250,7 +287,8 @@
         id: "lakepark", cluster: "korostyn", clusterLabel: "Коростынь",
         name: "Lake Park", pick: false, bed: "double",
         place: "д. Коростынь, ул. Озёрная, 54",
-        blurb: "Тот же южный берег Ильменя, ~8 км от Ретлё. Отдельные дома с двуспальной кроватью, терраса, печь-барбекю. Рейтинг 4.9 при 239 отзывах. Баня на дровах с видом на озеро.",
+        blurb: "Тот же южный берег Ильменя, ~8 км от Ретлё. Отдельные дома с двуспальной кроватью, терраса, печь-барбекю. Баня на дровах с видом на озеро.",
+        rating: { score: "4.9", count: "239", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/" },
         facts: [
           ["water", "Первая линия, пляж, сапы"],
           ["car", "~1 час от Новгорода, 30 км до Старой Руссы"],
@@ -281,24 +319,7 @@
           ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/les-i-luga/"]
         ]
       },
-      {
-        id: "truvor", cluster: "valdai", clusterLabel: "Валдай",
-        name: "Трувор", pick: false, bed: "double",
-        place: "д. Полосы, Середейское озеро",
-        blurb: "Она: уже близко к желаниям. На Яндексе номеров нет — бронировать на truvor.camp или +7 952 488-50-00. 270 отзывов на 5.0: озеро, сосны, для пар. Минусы: нет интернета, комары, слышимость, выходные дорогие (от ~15–25 тыс.). Есть Дом Мини на двоих.",
-        facts: [
-          ["forest", "Реликтовые сосны, тропа вокруг озера"],
-          ["car", "~2 часа от Новгорода"],
-          ["bath", "Двухуровневая парная и купель"]
-        ],
-        price: "от ~15 000 ₽", priceNote: "большой дом", season: "year",
-        extra: "VK vk.com/truvorglamping: «создан для пар». Зимой в Mini-доме хвалят панораму и тишину. Минусы: нет интернета, комары, слышимость. Один жёсткий отзыв «пластик за 70 тыс» — смотреть конкретный дом, не зеркальный куб на праздники."
-        links: [
-          ["Сайт", "https://truvor.camp/"],
-          ["VK", "https://vk.com/truvorglamping"],
-          ["Яндекс отзывы", "https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/"]
-        ]
-      },
+
       {
         id: "seredeya", cluster: "valdai", clusterLabel: "Валдай",
         name: "Середея Парк", pick: false, bed: "double",
@@ -358,7 +379,8 @@
         ],
         price: "от ~5 800 ₽", priceNote: "тент с двуспальной", season: "year",
         tel: "79052336866", telLabel: "+7 905 233-68-66",
-        extra: "Сайт glamping-vidomlicy.ru. Рейтинг 4.9.",
+        rating: { score: "4.9", count: "65", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/" },
+        extra: "Сайт glamping-vidomlicy.ru.",
         links: [
           ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/"],
           ["novgorod.travel", "https://novgorod.travel/hotels/glemping-vidolmlitsy"]
@@ -402,7 +424,7 @@
       }
     ];
 
-    const state = { cluster: "all", bed: "all" };
+    const state = { cluster: "all", bed: "all", her: false };
     const catalogue = document.getElementById("catalogue");
     const empty = document.getElementById("empty");
     const count = document.getElementById("count");
@@ -410,7 +432,8 @@
     function visible(p) {
       const c = state.cluster === "all" || p.cluster === state.cluster;
       const b = state.bed === "all" || p.bed === state.bed;
-      return c && b;
+      const h = !state.her || p.her;
+      return c && b && h;
     }
 
     function render() {
@@ -430,21 +453,32 @@
       ).join("");
       const tel = p.tel ? `<a class="btn" href="tel:+${p.tel}">${p.telLabel}</a>` : "";
       const extra = p.extra ? `<p>${p.extra}</p>` : "";
-      const badges = (p.pick ? `<span class="card__badge">ей зашло</span>` : "") +
+      const badges = (p.herLabel ? `<span class="card__badge">${p.herLabel}</span>` : "") +
         (p.bed === "double" ? `<span class="card__badge">двуспальная</span>` : "");
+      const rating = p.rating
+        ? `<p class="rating"><a href="${p.rating.url}" target="_blank" rel="noopener">${p.rating.score} · ${p.rating.count} · ${p.rating.source}</a></p>`
+        : "";
+      const quote = p.quote
+        ? `<blockquote class="quote">«${p.quote.text}»<footer>${p.quote.meta}</footer></blockquote>`
+        : "";
+      const voices = (p.plus || p.minus)
+        ? `<div class="voices">${p.plus ? `<div><h4>Плюсы</h4><ul>${p.plus.map((x) => `<li>${x}</li>`).join("")}</ul></div>` : ""}${p.minus ? `<div><h4>Минусы</h4><ul>${p.minus.map((x) => `<li>${x}</li>`).join("")}</ul></div>` : ""}</div>`
+        : "";
+      const moreLabel = p.quote || p.plus ? "Отзывы" : "Подробнее";
       return `<article class="card" id="place-${p.id}" data-id="${p.id}" data-cluster="${p.cluster}" data-season="${p.season}" data-pick="${p.pick ? "yes" : "no"}">
         <div class="card__kicker">${p.clusterLabel} ${badges}</div>
         <h3>${p.name}</h3>
         <p class="card__place">${p.place}</p>
+        ${rating}
         <p>${p.blurb}</p>
         <ul class="card__facts">${facts}</ul>
         <div class="card__price">${p.price}<span>${p.priceNote}</span></div>
         <div class="card__actions">
           ${links}
           ${tel}
-          <button class="btn" type="button" data-more="${p.id}" aria-expanded="false">Подробнее</button>
+          <button class="btn" type="button" data-more="${p.id}" data-label="${moreLabel}" aria-expanded="false">${moreLabel}</button>
         </div>
-        <div class="more" id="more-${p.id}"><div class="more__inner">${extra}<p>${p.place}</p></div></div>
+        <div class="more" id="more-${p.id}"><div class="more__inner">${quote}${voices}${extra}<p>${p.place}</p></div></div>
       </article>`;
     }
 
@@ -483,11 +517,20 @@
       render();
     }
 
+    function setHer() {
+      state.her = !state.her;
+      document.querySelectorAll('[data-filter="her"]').forEach((el) => {
+        el.setAttribute("aria-pressed", String(state.her));
+      });
+      render();
+    }
+
     document.body.addEventListener("click", (e) => {
       const chip = e.target.closest("[data-filter]");
       if (chip) {
         if (chip.dataset.filter === "cluster") setCluster(chip.dataset.value);
         if (chip.dataset.filter === "bed") setBed(chip.dataset.value);
+        if (chip.dataset.filter === "her") setHer();
         return;
       }
       const pin = e.target.closest(".pin");
@@ -502,7 +545,7 @@
         const open = !card.classList.contains("is-open");
         card.classList.toggle("is-open", open);
         more.setAttribute("aria-expanded", String(open));
-        more.textContent = open ? "Свернуть" : "Подробнее";
+        more.textContent = open ? "Свернуть" : (more.dataset.label || "Подробнее");
       }
     });
 
@@ -516,7 +559,23 @@
       }
     });
 
+    function openFromHash() {
+      const raw = (location.hash || "").replace(/^#/, "");
+      if (!raw) return;
+      const card = document.getElementById(raw) || document.getElementById("place-" + raw);
+      if (!card || !card.classList.contains("card")) return;
+      card.classList.add("is-open");
+      const more = card.querySelector("[data-more]");
+      if (more) {
+        more.setAttribute("aria-expanded", "true");
+        more.textContent = "Свернуть";
+      }
+      card.scrollIntoView({ block: "start" });
+    }
+    window.addEventListener("hashchange", openFromHash);
+
     render();
+    openFromHash();
   </script>
 </body>
 </html>
