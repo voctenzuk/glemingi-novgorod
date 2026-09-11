@@ -244,6 +244,8 @@ a:hover { color: var(--color-ink); }
   gap: var(--space-sm);
   align-content: start;
 }
+.card[data-cluster="chechulino"] { --swatch: oklch(38% 0.07 70); }
+.card[data-cluster="belaya-gora"] { --swatch: oklch(42% 0.08 55); }
 .card[data-cluster="retlyo"] { --swatch: var(--cluster-ilmen); }
 .card[data-cluster="korostyn"] { --swatch: var(--cluster-novgorod); }
 .card[data-cluster="russa"] { --swatch: var(--cluster-far); }
