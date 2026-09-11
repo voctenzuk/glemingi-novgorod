@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="tokens.css?v=8">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="tokens.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body data-tab="houses">
   <header class="mast">
@@ -38,16 +38,15 @@
     <section class="wrap hero panel-houses">
       <div>
         <h1>Уехать из города на выходные</h1>
-        <p class="hero__lede">Мы уже в Новгороде — пригород убран. Южный берег Ильменя, Старая Русса, Валдай, Демянск, Любытино, Мошенское. Ищем двуспальную кровать. Выходные разбирают быстро.</p>
+        <p class="hero__lede">Останавливаемся в Щастье, Ретлё. Один панорамный дом на глинте, двуспальная. Оттуда — берег, Коростынь, Старая Русса. Валдай в эту поездку не входит.</p>
       </div>
       <aside class="hero__aside">
-        <strong>Любимая уже смотрела</strong>
-        <p>Smaland — Настя: «я за», даже зимой, от двух ночей. Трувор близок, на Яндексе пусто — сайт. Белка — треугольные двухэтажные, места есть. КосмоСфера — поле, на лето. На карточке — вырезка отзыва, не надо открывать.</p>
+        <strong>Едем в Щастье</strong>
+        <p>Насте зашло. Работает один дом — звонить +7 911 790-00-78. Кухня своя, завтраки у них, сапы и велики. Бани в доме нет: пар — в Ильмере в той же деревне или в Русском санатории.</p>
         <div class="hero__picks">
-          <a href="#place-smaland">Smaland Хюгге Хаус</a>
-          <a href="#place-truvor">Трувор</a>
-          <a href="#place-belka">Белка</a>
-          <a href="#place-kosmosfera">КосмоСфера</a>
+          <a href="#place-shaste">Щастье · бронь</a>
+          <a href="#ryadom">Куда оттуда</a>
+          <a href="#banya">Пар рядом</a>
         </div>
       </aside>
     </section>
@@ -126,6 +125,21 @@
     </div>
 
     <section class="wrap catalogue panel-houses" id="catalogue" aria-live="polite">
+<article class="card" id="place-shaste" data-id="shaste" data-cluster="retlyo" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
+        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">едем сюда</span><span class="card__badge">двуспальная</span></div>
+        <h3>Щастье</h3>
+        <p class="card__place">д. Ретлё, ул. Ильменская, 38В</p>
+        
+        <p>Едем сюда. Панорамный дом-контейнер, первая линия, глинт. Одна двуспальная. На сайте: работает один дом. Кухня полная, завтраки, сапы, велики. Бани в доме нет.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>50 м до пляжа, вид на Ильмень</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода, 25–35 км до Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Кухня, тёплые полы, душ внутри</span></li></ul>
+        <div class="card__price">от ~6 500 ₽<span>дом на двоих</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://xn--80ak9ae6av.xn--p1acf/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/shchaste/" target="_blank" rel="noopener">Яндекс</a>
+          <a class="btn" href="tel:+79117900078">+7 911 790-00-78</a>
+          <button class="btn" type="button" data-more="shaste" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-shaste"><div class="more__inner"><p>happy.ilmen@yandex.ru. Поворот к озеру в деревне Буреги, трасса Шимск–Старая Русса. От Новгорода ~70 км, ~1 час. От Руссы ~29 км, ~35 мин. Магазин ~15 мин, аптека и банкомат в Руссе. <a href="#ryadom">Куда отсюда</a>.</p></div></div>
+      </article>
 <article class="card" id="place-smaland" data-id="smaland" data-cluster="chechulino" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
         <div class="card__kicker">Чечулино · 20 мин <span class="card__badge">я за</span><span class="card__badge">двуспальная</span></div>
         <h3>Smaland Хюгге Хаус</h3>
@@ -310,21 +324,6 @@
           <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/shishkarnoe/" target="_blank" rel="noopener">Яндекс</a>
         </div>
       </article>
-<article class="card" id="place-shaste" data-id="shaste" data-cluster="retlyo" data-season="year" data-pick="yes" data-bed="double" data-her="no">
-        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">Насте зашло</span><span class="card__badge">двуспальная</span></div>
-        <h3>Щастье</h3>
-        <p class="card__place">д. Ретлё, ул. Ильменская, 38В</p>
-        
-        <p>Насте зашло. Панорамный дом-контейнер на первой береговой линии, в Ильменском глинте. Одна двуспальная кровать, не две односпальные. На сайте писали: работает один дом — бронировать сразу.</p>
-        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>50 м до пляжа, вид на Ильмень</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода, 25–35 км до Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Кухня, тёплые полы, душ внутри</span></li></ul>
-        <div class="card__price">от ~6 500 ₽<span>дом на двоих</span></div>
-        <div class="card__actions">
-          <a class="btn btn--solid" href="https://xn--80ak9ae6av.xn--p1acf/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/shchaste/" target="_blank" rel="noopener">Яндекс</a>
-          <a class="btn" href="tel:+79117900078">+7 911 790-00-78</a>
-          <button class="btn" type="button" data-more="shaste" data-label="Подробнее" aria-expanded="false">Подробнее</button>
-        </div>
-        <div class="more" id="more-shaste"><div class="more__inner"><p>Тел. +7 911 790-00-78. happy.ilmen@yandex.ru</p><p>д. Ретлё, ул. Ильменская, 38В</p></div></div>
-      </article>
 <article class="card" id="place-kamen" data-id="kamen" data-cluster="retlyo" data-season="year" data-pick="yes" data-bed="double" data-her="no">
         <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">двуспальная</span></div>
         <h3>Усадьба Большой Камень</h3>
@@ -481,10 +480,11 @@
     <section class="wrap nearby panel-nearby" id="ryadom">
       <div class="nearby__intro">
         <h2>Куда сходить с домика</h2>
-        <p>Не гид по области. Что успеть за выходные, не уезжая далеко. Кремль не пишем — вы уже в Новгороде. Вкладка «Необычное» — обрывы, руины, вода, где мало людей.</p>
+        <p>Сейчас база — Щастье в Ретлё. Фильтр «Из Щастья» — только то, что успеть за выходные с этого дома. Валдай отсюда не тащим.</p>
       </div>
       <div class="nearby__chips" role="toolbar" aria-label="Кластеры рядом">
         <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="from-shaste">Из Щастья</button>
         <button class="chip" type="button" data-filter="cluster" data-value="odd">Необычное</button>
         <button class="chip" type="button" data-filter="cluster" data-value="chechulino">Чечулино</button>
         <button class="chip" type="button" data-filter="cluster" data-value="moiseevichi">Моисеевичи</button>
@@ -499,6 +499,23 @@
         <button class="chip" type="button" data-filter="cluster" data-value="moshenskoe">Мошенское</button>
         <button class="chip" type="button" data-filter="cluster" data-value="batetsky">Батецкий</button>
       </div>
+
+      <article class="near" data-cluster="from-shaste retlyo">
+        <div class="near__meta">
+          <p class="kicker">База · Щастье</p>
+          <h3>Куда доехать с Ретлё</h3>
+          <p class="near__stays"><a href="#place-shaste">Щастье</a> · Ильменская 38В. Еду брать с собой: в деревне магазин тонкий.</p>
+        </div>
+        <ol>
+          <li><strong>От двери</strong> Глинт — обрыв девонского моря до 15 м, 8 км вдоль берега. Окаменелости на пляже, каменная коса (бывшая пристань). Сапы по Псиже и Ильменю, велики у хозяев. Вода часто по колено — купаться как на Труворе не ждите. <span class="when">пешком</span></li>
+          <li><strong>Буреги</strong> Поворот с трассы Шимск–Русса, вы уже проезжаете. Руины Воскресенского собора и Никольской на высоком берегу Псижи. Камень 1736–1764, пусто, ветер с озера. <span class="when">10–15 мин</span></li>
+          <li><strong>Коростынь</strong> ~8 км на запад. Путевой дворец Стасова, Успенская церковь 1726 года (Кьявери), родник, галька. Глинт здесь выше, чем у дома. <span class="when">15 мин</span></li>
+          <li><strong>Старая Русса</strong> ~25–29 км. Дом Достоевского, Спасо-Преображенский (колокольня), Муравьёвский фонтан круглый год, калачи. Аптека, банкомат, нормальный магазин. <span class="when">~35 мин</span></li>
+          <li><strong>Пар</strong> В доме бани нет. Ильмера — та же деревня, термоСПА. Санаторий в Руссе — грязи и аквацентр, если нужен именно курорт. <span class="when">пешком / 35 мин</span></li>
+          <li><strong>Село Медведь</strong> Через Шимск. Аракчеевские казармы Стасова, японский мемориал 1905 года. Это уже полдня, не «заехать по пути». <span class="when">~50–60 мин</span></li>
+          <li><strong>Не ехать</strong> Валдай, Селигер, Любытино. Отсюда это другой отпуск. Николо-Косинский — 5 км за Руссой, только если уже в городе и осталось время. <span class="when">не эти выходные</span></li>
+        </ol>
+      </article>
 
       <article class="near" data-cluster="odd chechulino moiseevichi pyatnitsa belaya-gora retlyo korostyn russa valdai">
         <div class="near__meta">
@@ -555,7 +572,7 @@
         </ol>
       </article>
 
-      <article class="near" data-cluster="retlyo">
+      <article class="near" data-cluster="retlyo from-shaste">
         <div class="near__meta">
           <p class="kicker">Ретлё · ~1 час</p>
           <h3>Ильменский глинт под ногами</h3>
@@ -568,7 +585,7 @@
         </ol>
       </article>
 
-      <article class="near" data-cluster="korostyn">
+      <article class="near" data-cluster="korostyn from-shaste">
         <div class="near__meta">
           <p class="kicker">Коростынь</p>
           <h3>Дворец, глинт, пляж</h3>
@@ -582,9 +599,9 @@
         </ol>
       </article>
 
-      <article class="near" data-cluster="russa">
+      <article class="near" data-cluster="russa from-shaste">
         <div class="near__meta">
-          <p class="kicker">Старая Русса · ~1,5 часа</p>
+          <p class="kicker">Старая Русса · ~35 мин от Щастья</p>
           <h3>Достоевский и источники</h3>
           <p class="near__stays"><a href="#place-lesiluga">Лес и Луга</a></p>
         </div>
@@ -665,17 +682,18 @@
     <section class="wrap nearby panel-spa" id="banya">
       <div class="nearby__intro">
         <h2>Пар, чан, минералка</h2>
-        <p>Не городские сауны — вы в них и так можете. Сюда едут парой на выходные: курорт, термоСПА, баня у леса. В домиках баня часто уже есть — ниже отдельно.</p>
+        <p>С Щастья бани в доме нет. Ближний пар — Ильмера в той же деревне. Санаторий в Руссе — 35 мин, если нужны грязи. Валдайские бани в эту поездку не входят.</p>
       </div>
       <div class="nearby__chips" role="toolbar" aria-label="Кластеры бани">
         <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="from-shaste">Из Щастья</button>
         <button class="chip" type="button" data-filter="cluster" data-value="retlyo">Ретлё</button>
         <button class="chip" type="button" data-filter="cluster" data-value="russa">Старая Русса</button>
         <button class="chip" type="button" data-filter="cluster" data-value="valdai">Валдай</button>
         <button class="chip" type="button" data-filter="cluster" data-value="cabin">В домиках</button>
       </div>
 
-      <article class="near" data-cluster="russa">
+      <article class="near" data-cluster="russa from-shaste">
         <div class="near__meta">
           <p class="kicker">Старая Русса · курорт</p>
           <h3>Санаторий «Старая Русса»</h3>
@@ -688,7 +706,7 @@
         </ol>
       </article>
 
-      <article class="near" data-cluster="retlyo">
+      <article class="near" data-cluster="retlyo from-shaste">
         <div class="near__meta">
           <p class="kicker">Ретлё · термоСПА</p>
           <h3>Ильмера</h3>
@@ -780,6 +798,7 @@
   <script>
     (function () {
       const state = { cluster: "all", bed: "all", her: false, tab: "houses" };
+      const nearbyOnly = { "from-shaste": true, odd: true };
       const cards = document.querySelectorAll("#catalogue .card");
       const empty = document.getElementById("empty");
       const count = document.getElementById("count");
@@ -808,6 +827,7 @@
       }
 
       function setTab(tab) {
+        const prev = state.tab;
         state.tab = tab === "nearby" ? "nearby" : tab === "spa" ? "spa" : "houses";
         document.body.setAttribute("data-tab", state.tab);
         document.querySelectorAll(".tabs a").forEach(function (a) {
@@ -815,6 +835,13 @@
           if (on) a.setAttribute("aria-current", "page");
           else a.removeAttribute("aria-current");
         });
+        if (state.tab === "houses" && nearbyOnly[state.cluster]) {
+          setCluster("all");
+        } else if (state.tab === "nearby" && prev !== "nearby" && (state.cluster === "all" || state.cluster === "odd")) {
+          setCluster("from-shaste");
+        } else if (state.tab === "spa" && state.cluster === "odd") {
+          setCluster("all");
+        }
       }
 
       function setCluster(value) {
@@ -898,6 +925,7 @@
         const raw = (location.hash || "").replace(/^#/, "");
         if (raw === "ryadom") {
           setTab("nearby");
+          if (state.cluster === "all" || state.cluster === "odd") setCluster("from-shaste");
           return;
         }
         if (raw === "banya") {
