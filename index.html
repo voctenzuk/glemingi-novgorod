@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="tokens.css?v=7">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="tokens.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body data-tab="houses">
   <header class="mast">
@@ -28,6 +28,7 @@
       <nav class="tabs" aria-label="Разделы">
         <a href="#domiki" data-tab="houses" aria-current="page">Домики</a>
         <a href="#ryadom" data-tab="nearby">Рядом</a>
+        <a href="#banya" data-tab="spa">Баня и СПА</a>
       </nav>
       <div class="mast__rule" aria-hidden="true"></div>
     </div>
@@ -660,6 +661,94 @@
         </ol>
       </article>
     </section>
+
+    <section class="wrap nearby panel-spa" id="banya">
+      <div class="nearby__intro">
+        <h2>Пар, чан, минералка</h2>
+        <p>Не городские сауны — вы в них и так можете. Сюда едут парой на выходные: курорт, термоСПА, баня у леса. В домиках баня часто уже есть — ниже отдельно.</p>
+      </div>
+      <div class="nearby__chips" role="toolbar" aria-label="Кластеры бани">
+        <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="retlyo">Ретлё</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="russa">Старая Русса</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="valdai">Валдай</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="cabin">В домиках</button>
+      </div>
+
+      <article class="near" data-cluster="russa">
+        <div class="near__meta">
+          <p class="kicker">Старая Русса · курорт</p>
+          <h3>Санаторий «Старая Русса»</h3>
+          <p class="near__stays">Минеральная, 62. <a href="https://russa.amaks-kurort.ru/" target="_blank" rel="noopener">сайт</a></p>
+        </div>
+        <ol>
+          <li><strong>Зачем ехать</strong> Грязи и хлоридно-натриевая вода, которых нет в глэмпинге. Муравьёвский фонтан бьёт сам, зимой тоже. Аквацентр: бассейн 25 м, хаммам, русская и финская. <span class="when">полчаса от Ретлё</span></li>
+          <li><strong>На ночь</strong> Просите студию с одной двуспальной, не две односпальные — в части номеров две кровати. От ~8 000 ₽ с человека в сутки с питанием, на двоих дороже. <span class="when">не хюгге-домик</span></li>
+          <li><strong>Без ночёвки</strong> Фонтан и парк можно посмотреть с улицы. Аквацентр — гостям курорта, не как городской спа. <span class="when">если живёте у Порусьи</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="retlyo">
+        <div class="near__meta">
+          <p class="kicker">Ретлё · термоСПА</p>
+          <h3>Ильмера</h3>
+          <p class="near__stays"><a href="#place-ilmera">барн на двоих</a> · +7 921 197-87-00</p>
+        </div>
+        <ol>
+          <li><strong>Цикл</strong> Русская парная → фурако → финская сауна → ледяной облив. Терраса, чай. Это не «баня в домике», а отдельный комплекс на территории. <span class="when">если ночуете в Ретлё</span></li>
+          <li><strong>Для пары</strong> Барн 28 м² с двуспальной. Тариф «Свидание». 100% предоплата. <span class="when">от 6 000 ₽</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="valdai">
+        <div class="near__meta">
+          <p class="kicker">Станки · 2 часа аренды</p>
+          <h3>Баня ДомДом</h3>
+          <p class="near__stays">Дорожная, 1. <a href="http://valdaybanya.ru/" target="_blank" rel="noopener">valdaybanya.ru</a> · +7 911 813-62-00</p>
+        </div>
+        <ol>
+          <li><strong>Пар Feringer</strong> Змеевик, холодная купель круглый год, терраса, гамаки. 8 000 ₽ / 2 часа, дальше 2 000 ₽/час. Не ночёвка — к Aframe в Станках или Трувору. <span class="when">рядом со Станками</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="valdai">
+        <div class="near__meta">
+          <p class="kicker">Короцко · эко-клуб</p>
+          <h3>Валдай Эко-Клуб</h3>
+          <p class="near__stays">Зелёная, 1. 5.0 · 1 466 отзывов. +7 903 004-59-76</p>
+        </div>
+        <ol>
+          <li><strong>Плавучая баня</strong> На озере Борое, плюс финская у ручья и фито-чан. Спа: массаж, обёртывания. <span class="when">на территории</span></li>
+          <li><strong>Честно</strong> Это семейный курорт на 70+ человек, не домик на двоих. Если Насте нужен именно пар на воде — да. Если «я за» как Smaland — нет. <span class="when">от ~7 500 ₽</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="valdai">
+        <div class="near__meta">
+          <p class="kicker">Рощино · озеро Ужин</p>
+          <h3>Дом отдыха «Валдай»</h3>
+          <p class="near__stays">18 км от города Валдай. <a href="https://valdaydom.ru/" target="_blank" rel="noopener">valdaydom.ru</a> · 8 81666 46-046</p>
+        </div>
+        <ol>
+          <li><strong>СПА-корпус</strong> Бассейн, русская, турецкая, финская, гидромассаж. Полуостров, сосны. Ближе к санаторию, чем к глэмпингу. <span class="when">с Трувора — крюк</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="cabin retlyo valdai belaya-gora pyatnitsa">
+        <div class="near__meta">
+          <p class="kicker">Уже в домиках</p>
+          <h3>Баня на месте, не ехать</h3>
+          <p class="near__stays">Если цель — пар, сначала это.</p>
+        </div>
+        <ol>
+          <li><strong>Большой Камень</strong> Баня внутри мини-коттеджа, 180×200. То, что Настя уже смотрела. <span class="when">Ретлё</span></li>
+          <li><strong>Трувор</strong> Двухуровневая парная и купель. Чан на поляне. <span class="when">Валдай</span></li>
+          <li><strong>Белка</strong> Большая баня на дровах, чан. <span class="when">М-10</span></li>
+          <li><strong>A-frame Friday</strong> Баня, купель, джакузи. <span class="when">Пятница</span></li>
+          <li><strong>Aframe / ШишкАрное</strong> Фурако и чан в лесу нацпарка. <span class="when">Станки, Усадье</span></li>
+        </ol>
+      </article>
+    </section>
   </main>
 
   <footer class="wrap colophon">
@@ -711,7 +800,7 @@
         });
         if (count) count.textContent = n + " из " + cards.length;
         if (empty) empty.classList.toggle("is-on", n === 0);
-        document.querySelectorAll("#ryadom .near").forEach(function (el) {
+        document.querySelectorAll("#ryadom .near, #banya .near").forEach(function (el) {
           const clusters = (el.getAttribute("data-cluster") || "").split(/\s+/);
           const on = state.cluster === "all" || clusters.indexOf(state.cluster) !== -1;
           el.classList.toggle("is-hidden", !on);
@@ -719,7 +808,7 @@
       }
 
       function setTab(tab) {
-        state.tab = tab === "nearby" ? "nearby" : "houses";
+        state.tab = tab === "nearby" ? "nearby" : tab === "spa" ? "spa" : "houses";
         document.body.setAttribute("data-tab", state.tab);
         document.querySelectorAll(".tabs a").forEach(function (a) {
           const on = a.getAttribute("data-tab") === state.tab;
@@ -746,7 +835,7 @@
         if (tabLink) {
           e.preventDefault();
           setTab(tabLink.getAttribute("data-tab"));
-          const hash = state.tab === "nearby" ? "#ryadom" : "#domiki";
+          const hash = state.tab === "nearby" ? "#ryadom" : state.tab === "spa" ? "#banya" : "#domiki";
           if (history.replaceState) history.replaceState(null, "", hash);
           window.scrollTo(0, 0);
           return;
@@ -777,7 +866,7 @@
         const pin = e.target.closest(".pin");
         if (pin) {
           setCluster(pin.getAttribute("data-cluster"));
-          const target = state.tab === "nearby" ? document.getElementById("ryadom") : document.getElementById("catalogue");
+          const target = state.tab === "nearby" ? document.getElementById("ryadom") : state.tab === "spa" ? document.getElementById("banya") : document.getElementById("catalogue");
           if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
           return;
         }
@@ -809,6 +898,10 @@
         const raw = (location.hash || "").replace(/^#/, "");
         if (raw === "ryadom") {
           setTab("nearby");
+          return;
+        }
+        if (raw === "banya") {
+          setTab("spa");
           return;
         }
         if (raw === "domiki" || raw === "top" || !raw) {

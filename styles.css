@@ -103,8 +103,12 @@ a:hover { color: var(--color-ink); }
   color: var(--color-ink);
   border-bottom-color: var(--color-ink);
 }
-body[data-tab="nearby"] .panel-houses { display: none; }
-body[data-tab="houses"] .panel-nearby { display: none; }
+body[data-tab="nearby"] .panel-houses,
+body[data-tab="spa"] .panel-houses { display: none; }
+body[data-tab="houses"] .panel-nearby,
+body[data-tab="spa"] .panel-nearby { display: none; }
+body[data-tab="houses"] .panel-spa,
+body[data-tab="nearby"] .panel-spa { display: none; }
 
 .hero {
   padding-top: var(--space-2xl);
@@ -518,6 +522,7 @@ body[data-tab="houses"] .panel-nearby { display: none; }
 .near[data-cluster*="moshenskoe"] { --swatch: oklch(40% 0.08 170); }
 .near[data-cluster*="batetsky"] { --swatch: var(--cluster-far); }
 .near[data-cluster*="odd"] { --swatch: oklch(42% 0.1 55); }
+.near[data-cluster*="cabin"] { --swatch: var(--color-pine); }
 .near__meta .kicker {
   font-family: var(--font-outlier);
   font-size: var(--text-xs);
