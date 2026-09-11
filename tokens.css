@@ -1,0 +1,66 @@
+/* Hallmark · portable tokens · theme: Garden · paper-band: light · display-style: high-contrast-serif · accent-hue: chromatic-other (leaf) */
+:root {
+  --color-paper: oklch(96.8% 0.018 118);
+  --color-paper-2: oklch(93.4% 0.022 120);
+  --color-paper-3: oklch(88.8% 0.032 128);
+  --color-rule: oklch(80% 0.028 132);
+  --color-rule-2: oklch(72% 0.03 138);
+  --color-neutral: oklch(48% 0.032 142);
+  --color-muted: oklch(36% 0.03 148);
+  --color-ink: oklch(21% 0.042 152);
+  --color-accent: oklch(44% 0.118 148);
+  --color-accent-ink: oklch(97% 0.012 118);
+  --color-focus: oklch(48% 0.16 148);
+  --color-water: oklch(52% 0.07 232);
+  --color-water-2: oklch(72% 0.05 220);
+  --color-pine: oklch(38% 0.07 150);
+  --color-sand: oklch(86% 0.04 85);
+
+  --cluster-novgorod: oklch(42% 0.09 70);
+  --cluster-ilmen: oklch(48% 0.1 232);
+  --cluster-valdai: oklch(40% 0.09 155);
+  --cluster-seliger: oklch(46% 0.1 250);
+  --cluster-far: oklch(44% 0.08 40);
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 1.0625rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --text-display: clamp(2.4rem, 4.2vw + 1rem, 4.6rem);
+  --text-display-s: clamp(1.8rem, 2.6vw + 0.8rem, 3rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --radius-sm: 2px;
+  --rule: 1px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+  --z-modal: 400;
+
+  --shadow-whisper: 0 1px 2px oklch(21% 0.04 152 / 0.06);
+}
