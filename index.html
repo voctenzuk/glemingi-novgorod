@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="tokens.css?v=5">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="tokens.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
-<body>
+<body data-tab="houses">
   <header class="mast">
     <div class="wrap">
       <div class="mast__meta">
@@ -25,12 +25,16 @@
         <span>выходные бронировать сразу</span>
       </div>
       <a class="mast__wordmark" href="#top">У воды</a>
+      <nav class="tabs" aria-label="Разделы">
+        <a href="#domiki" data-tab="houses" aria-current="page">Домики</a>
+        <a href="#ryadom" data-tab="nearby">Рядом</a>
+      </nav>
       <div class="mast__rule" aria-hidden="true"></div>
     </div>
   </header>
 
   <main id="top">
-    <section class="wrap hero">
+    <section class="wrap hero panel-houses">
       <div>
         <h1>Уехать из города на выходные</h1>
         <p class="hero__lede">Мы уже в Новгороде — пригород убран. Южный берег Ильменя, Старая Русса, Валдай, Демянск, Любытино, Мошенское. Ищем двуспальную кровать. Выходные разбирают быстро.</p>
@@ -99,7 +103,7 @@
       </div>
     </section>
 
-    <div class="filters">
+    <div class="filters panel-houses">
       <div class="wrap filters__row" role="toolbar" aria-label="Фильтры">
         <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
         <button class="chip" type="button" data-filter="her" data-value="yes" aria-pressed="false">Любимая</button>
@@ -120,7 +124,7 @@
       </div>
     </div>
 
-    <section class="wrap catalogue" id="catalogue" aria-live="polite">
+    <section class="wrap catalogue panel-houses" id="catalogue" aria-live="polite">
 <article class="card" id="place-smaland" data-id="smaland" data-cluster="chechulino" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
         <div class="card__kicker">Чечулино · 20 мин <span class="card__badge">я за</span><span class="card__badge">двуспальная</span></div>
         <h3>Smaland Хюгге Хаус</h3>
@@ -471,7 +475,173 @@
         <div class="more" id="more-pole"><div class="more__inner"><p>VK: vk.com/8glamp</p><p>д. Большой Волок, Батецкий округ</p></div></div>
       </article>
     </section>
-    <p class="wrap empty" id="empty">В этом срезе ничего нет. Снимите фильтр или выберите другой берег.</p>
+    <p class="wrap empty panel-houses" id="empty">В этом срезе ничего нет. Снимите фильтр или выберите другой берег.</p>
+
+    <section class="wrap nearby panel-nearby" id="ryadom">
+      <div class="nearby__intro">
+        <h2>Куда сходить с домика</h2>
+        <p>Не гид по области. Что успеть за выходные, не уезжая далеко. Кремль не пишем — вы уже в Новгороде.</p>
+      </div>
+      <div class="nearby__chips" role="toolbar" aria-label="Кластеры рядом">
+        <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="chechulino">Чечулино</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="moiseevichi">Моисеевичи</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="belaya-gora">Белка</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="pyatnitsa">Пятница</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="retlyo">Ретлё</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="korostyn">Коростынь</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="russa">Старая Русса</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="valdai">Валдай</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="seliger">Демянск</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="lyubytino">Любытино</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="moshenskoe">Мошенское</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="batetsky">Батецкий</button>
+      </div>
+
+      <article class="near" data-cluster="chechulino moiseevichi">
+        <div class="near__meta">
+          <p class="kicker">Юг города · 15–30 мин</p>
+          <h3>Волхов и Ильмень у истока</h3>
+          <p class="near__stays">Smaland, Моисеевичи Life. <a href="#place-smaland">к домикам</a></p>
+        </div>
+        <ol>
+          <li><strong>Юрьев монастырь</strong> Георгиевский собор 1119 года, берег Волхова. От Моисеевичей ближе, чем от Чечулина. <span class="when">полчаса</span></li>
+          <li><strong>Витославлицы</strong> Музей деревянного зодчества рядом с Юрьевым. Церкви, избы, звонницы с разных концов области. <span class="when">рядом с монастырём</span></li>
+          <li><strong>Рюриково городище</strong> Напротив Юрьева, через Волхов. Вид на обитель и исток реки из Ильменя. <span class="when">15 мин от Юрьева</span></li>
+          <li><strong>Речка Питьба</strong> Если остались в Чечулине: 200 м от Smaland, без города. <span class="when">пешком</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="belaya-gora">
+        <div class="near__meta">
+          <p class="kicker">М-10 · ~30 мин</p>
+          <h3>Белка: лес, а не экскурсии</h3>
+          <p class="near__stays"><a href="#place-belka">Белка</a></p>
+        </div>
+        <ol>
+          <li><strong>Сосны, грибы, речка Ниша</strong> Смысл места — не уезжать. Пруды летом, каток зимой. <span class="when">на территории</span></li>
+          <li><strong>Не Хутынь</strong> Монастырь у Волхова — это другой конец области, 7 км от города, не от Белой Горы. Сюда за тишиной. <span class="when">оставайтесь</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="pyatnitsa">
+        <div class="near__meta">
+          <p class="kicker">Пятница · ~30 мин</p>
+          <h3>Мста в соснах</h3>
+          <p class="near__stays"><a href="#place-friday">A-frame Friday</a></p>
+        </div>
+        <ol>
+          <li><strong>Река Мста</strong> Пешком минут 10–20. Рыбалка круглый год, летом купание. <span class="when">пешком</span></li>
+          <li><strong>Сосновый лес</strong> Грибы, ягоды. Городских точек рядом нет — это плюс, если хотели как Smaland, только глубже в лес. <span class="when">вокруг дома</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="retlyo">
+        <div class="near__meta">
+          <p class="kicker">Ретлё · ~1 час</p>
+          <h3>Ильменский глинт под ногами</h3>
+          <p class="near__stays">КосмоСфера, Щастье, Большой Камень, Ильмера. <a href="#place-kosmosfera">к домикам</a></p>
+        </div>
+        <ol>
+          <li><strong>Глинт</strong> Обрыв девонского моря до 15 м, 8 км вдоль берега. Окаменелости на пляже, закаты с поля. Спуск к воде по распадкам. <span class="when">от двери</span></li>
+          <li><strong>Коростынь</strong> 8 км: путевой дворец Александра I, Успенская церковь 1726 года, родник. <span class="when">15 мин на машине</span></li>
+          <li><strong>Старая Русса</strong> 25–35 км: дом Достоевского, минеральные источники, калачи. <span class="when">полчаса</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="korostyn">
+        <div class="near__meta">
+          <p class="kicker">Коростынь</p>
+          <h3>Дворец, глинт, пляж</h3>
+          <p class="near__stays"><a href="#place-lakepark">Lake Park</a></p>
+        </div>
+        <ol>
+          <li><strong>Путевой дворец</strong> Камень снизу, дерево сверху — редкий ампир. Строили для Александра I. <span class="when">в деревне</span></li>
+          <li><strong>Успенская церковь</strong> 1726, почти не перестраивали. Заказала Екатерина I. <span class="when">в деревне</span></li>
+          <li><strong>Глинт и галька</strong> Тот же ильменский обрыв, что в Ретлё. Летом вода тёплая. <span class="when">к берегу</span></li>
+          <li><strong>Родник «Живоносный источник»</strong> Часовня у деревни. <span class="when">пешком</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="russa">
+        <div class="near__meta">
+          <p class="kicker">Старая Русса · ~1,5 часа</p>
+          <h3>Достоевский и источники</h3>
+          <p class="near__stays"><a href="#place-lesiluga">Лес и Луга</a></p>
+        </div>
+        <ol>
+          <li><strong>Дом-музей Достоевского</strong> Здесь писали «Братьев Карамазовых». Город в романе — Скотопригоньевск. <span class="when">в городе</span></li>
+          <li><strong>Курорт и минералка</strong> Екатерининский и Царицынский источники. Грязи, если захотите санаторий, а не лес. <span class="when">в городе</span></li>
+          <li><strong>Водонапорная башня</strong> 126 ступеней, панорама на Полисть. <span class="when">20 мин</span></li>
+          <li><strong>Ильмень</strong> Глинт и Коростынь — 30–35 км, если остались у Порусьи и захотели озеро. <span class="when">полчаса</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="valdai">
+        <div class="near__meta">
+          <p class="kicker">Валдай · ~2 часа</p>
+          <h3>Озеро, остров, тропа</h3>
+          <p class="near__stays">Трувор, Середея, Aframe в Станках, ШишкАрное. <a href="#place-truvor">к домикам</a></p>
+        </div>
+        <ol>
+          <li><strong>Иверский монастырь</strong> Остров Сельвицкий, 10 км от города. Белые стены из воды. Мост на остров. <span class="when">20–30 мин</span></li>
+          <li><strong>Большая Валдайская тропа</strong> Трувор стоит на ней. На день: «Лесные тайны» 1,8 км или «Иваньи перелески» 2 км. Вся тропа 59 км — это не выходные. <span class="when">от домика / 2 км</span></li>
+          <li><strong>Гора Рыжоха</strong> Вышка, высшая точка валдайских холмов. <span class="when">если есть силы</span></li>
+          <li><strong>Музей колоколов и баранки</strong> В городе. Колокольня Троицкого собора — вид на озеро. <span class="when">15 мин до Валдая</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="seliger">
+        <div class="near__meta">
+          <p class="kicker">Демянск · Селигер</p>
+          <h3>Плёс и Ореховна</h3>
+          <p class="near__stays">Атмосфера, Seliger Club. <a href="#place-atmosfera">к домикам</a></p>
+        </div>
+        <ol>
+          <li><strong>Полновский плёс</strong> Лодка, сап, закат. Смысл Селигера — вода, не музеи. <span class="when">от берега</span></li>
+          <li><strong>Гора Ореховна</strong> 288 м, высшая точка области. Валун на вершине, вид на плёс. <span class="when">с Полнова</span></li>
+          <li><strong>Демянск</strong> Краеведческий музей, «котёл» 1942 года. Если нужна история, не только озеро. <span class="when">на машине</span></li>
+          <li><strong>Нилова пустынь</strong> Уже Тверская сторона, дальше. Имеет смысл, только если остаётесь на три дня. <span class="when">лишний час</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="lyubytino">
+        <div class="near__meta">
+          <p class="kicker">Любытино · ~2 часа</p>
+          <h3>Сопки и Мста</h3>
+          <p class="near__stays"><a href="#place-vidomlicy">Видомлицы</a></p>
+        </div>
+        <ol>
+          <li><strong>Славянская деревня X века</strong> Избы, кузница, жернова. На берегу Мсты, вход около 100 ₽. <span class="when">в посёлке</span></li>
+          <li><strong>Сопки у моста</strong> Погребальные холмы 8–10 м. Вокруг Любытина больше 200 насыпей. <span class="when">центр посёлка</span></li>
+          <li><strong>Горная Мста</strong> Пороги, каньон Прикши, зимой склон «Любогорье». <span class="when">по желанию</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="moshenskoe">
+        <div class="near__meta">
+          <p class="kicker">Мошенское · ~2,5 часа</p>
+          <h3>Озеро без соседей</h3>
+          <p class="near__stays"><a href="#place-chuchemlya">Chuchemlya</a></p>
+        </div>
+        <ol>
+          <li><strong>Само озеро</strong> Баня на воде, лес, ферма. Городских точек нет — за этим и едут. <span class="when">на месте</span></li>
+          <li><strong>Окуловка / Боровичи</strong> Только если понадобится магазин или поезд. Не цель поездки. <span class="when">час на такси</span></li>
+        </ol>
+      </article>
+
+      <article class="near" data-cluster="batetsky">
+        <div class="near__meta">
+          <p class="kicker">Батецкий · Луга</p>
+          <h3>Поле и река</h3>
+          <p class="near__stays"><a href="#place-pole">Поле Бесконечности</a></p>
+        </div>
+        <ol>
+          <li><strong>Река Луга, сапы</strong> Сезон май–сентябрь. Это поле, не берег Ильменя. <span class="when">на территории</span></li>
+          <li><strong>Ближе к Петербургу</strong> Экскурсий рядом нет. Если шатры уже закрыты — не ехать «посмотреть». <span class="when">лето</span></li>
+        </ol>
+      </article>
+    </section>
   </main>
 
   <footer class="wrap colophon">
@@ -502,7 +672,7 @@
 
   <script>
     (function () {
-      const state = { cluster: "all", bed: "all", her: false };
+      const state = { cluster: "all", bed: "all", her: false, tab: "houses" };
       const cards = document.querySelectorAll("#catalogue .card");
       const empty = document.getElementById("empty");
       const count = document.getElementById("count");
@@ -523,6 +693,21 @@
         });
         if (count) count.textContent = n + " из " + cards.length;
         if (empty) empty.classList.toggle("is-on", n === 0);
+        document.querySelectorAll("#ryadom .near").forEach(function (el) {
+          const clusters = (el.getAttribute("data-cluster") || "").split(/\s+/);
+          const on = state.cluster === "all" || clusters.indexOf(state.cluster) !== -1;
+          el.classList.toggle("is-hidden", !on);
+        });
+      }
+
+      function setTab(tab) {
+        state.tab = tab === "nearby" ? "nearby" : "houses";
+        document.body.setAttribute("data-tab", state.tab);
+        document.querySelectorAll(".tabs a").forEach(function (a) {
+          const on = a.getAttribute("data-tab") === state.tab;
+          if (on) a.setAttribute("aria-current", "page");
+          else a.removeAttribute("aria-current");
+        });
       }
 
       function setCluster(value) {
@@ -539,6 +724,17 @@
       }
 
       document.body.addEventListener("click", function (e) {
+        const tabLink = e.target.closest(".tabs a[data-tab]");
+        if (tabLink) {
+          e.preventDefault();
+          setTab(tabLink.getAttribute("data-tab"));
+          const hash = state.tab === "nearby" ? "#ryadom" : "#domiki";
+          if (history.replaceState) history.replaceState(null, "", hash);
+          window.scrollTo(0, 0);
+          return;
+        }
+        const toPlace = e.target.closest('a[href^="#place-"]');
+        if (toPlace && state.tab === "nearby") setTab("houses");
         const chip = e.target.closest("[data-filter]");
         if (chip) {
           const kind = chip.getAttribute("data-filter");
@@ -563,7 +759,8 @@
         const pin = e.target.closest(".pin");
         if (pin) {
           setCluster(pin.getAttribute("data-cluster"));
-          document.getElementById("catalogue").scrollIntoView({ behavior: "smooth", block: "start" });
+          const target = state.tab === "nearby" ? document.getElementById("ryadom") : document.getElementById("catalogue");
+          if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
           return;
         }
         const more = e.target.closest("[data-more]");
@@ -592,9 +789,17 @@
 
       function openFromHash() {
         const raw = (location.hash || "").replace(/^#/, "");
-        if (!raw) return;
+        if (raw === "ryadom") {
+          setTab("nearby");
+          return;
+        }
+        if (raw === "domiki" || raw === "top" || !raw) {
+          setTab("houses");
+          if (!raw) return;
+        }
         const card = document.getElementById(raw) || document.getElementById("place-" + raw);
         if (!card || !card.classList.contains("card")) return;
+        setTab("houses");
         card.classList.add("is-open");
         const more = card.querySelector("[data-more]");
         if (more) {

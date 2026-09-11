@@ -84,6 +84,27 @@ a:hover { color: var(--color-ink); }
   margin-top: var(--space-xs);
   box-shadow: 0 3px 0 var(--color-paper), 0 4px 0 var(--color-ink);
 }
+.tabs {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.tabs a {
+  color: var(--color-muted);
+  text-decoration: none;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
+}
+.tabs a[aria-current="page"] {
+  color: var(--color-ink);
+  border-bottom-color: var(--color-ink);
+}
+body[data-tab="nearby"] .panel-houses { display: none; }
+body[data-tab="houses"] .panel-nearby { display: none; }
 
 .hero {
   padding-top: var(--space-2xl);
@@ -456,6 +477,82 @@ a:hover { color: var(--color-ink); }
 }
 .empty.is-on { display: block; }
 
+.nearby {
+  padding-block: var(--space-xl) var(--space-3xl);
+}
+.nearby__intro {
+  max-width: 46ch;
+  color: var(--color-muted);
+  margin-bottom: var(--space-lg);
+}
+.nearby__intro h2 {
+  font-size: var(--text-xl);
+  color: var(--color-ink);
+  margin-bottom: var(--space-sm);
+}
+.nearby__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+}
+.near {
+  border-top: 4px solid var(--swatch, var(--color-ink));
+  padding: var(--space-lg) 0 var(--space-xl);
+  display: grid;
+  grid-template-columns: minmax(12ch, 0.7fr) minmax(0, 1.6fr);
+  gap: var(--space-lg);
+  align-items: start;
+}
+.near.is-hidden { display: none; }
+.near[data-cluster*="chechulino"],
+.near[data-cluster*="moiseevichi"] { --swatch: oklch(38% 0.07 70); }
+.near[data-cluster*="belaya-gora"] { --swatch: oklch(42% 0.08 55); }
+.near[data-cluster*="pyatnitsa"] { --swatch: oklch(38% 0.07 160); }
+.near[data-cluster*="retlyo"],
+.near[data-cluster*="korostyn"] { --swatch: var(--cluster-ilmen); }
+.near[data-cluster*="russa"] { --swatch: var(--cluster-far); }
+.near[data-cluster*="valdai"] { --swatch: var(--cluster-valdai); }
+.near[data-cluster*="seliger"] { --swatch: var(--cluster-seliger); }
+.near[data-cluster*="lyubytino"] { --swatch: oklch(42% 0.08 250); }
+.near[data-cluster*="moshenskoe"] { --swatch: oklch(40% 0.08 170); }
+.near[data-cluster*="batetsky"] { --swatch: var(--cluster-far); }
+.near__meta .kicker {
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: var(--space-2xs);
+}
+.near h3 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+.near__stays {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+.near__stays a { color: var(--color-ink); }
+.near ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: var(--space-sm);
+}
+.near li { max-width: 62ch; }
+.near li strong {
+  font-family: var(--font-display);
+  font-weight: 620;
+  font-size: var(--text-md);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+.near .when {
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
 .colophon {
   border-top: 2px solid var(--color-ink);
   padding-block: var(--space-xl) var(--space-2xl);
@@ -473,7 +570,7 @@ a:hover { color: var(--color-ink); }
 }
 
 @media (max-width: 900px) {
-  .hero, .colophon { grid-template-columns: 1fr; }
+  .hero, .colophon, .near { grid-template-columns: 1fr; }
   .hero__aside { border-left: 0; border-top: var(--rule) solid var(--color-rule); padding: var(--space-md) 0 0; }
   .card { grid-column: span 6; }
   .pin { font-size: 0.65rem; padding: 0.35rem 0.5rem; min-width: 0; }
