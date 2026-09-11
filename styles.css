@@ -391,13 +391,8 @@ a:hover { color: var(--color-ink); }
 .btn:hover, .btn:active { background: var(--color-ink); color: var(--color-paper); }
 .btn--solid { background: var(--color-ink); color: var(--color-paper); }
 .btn--solid:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); }
-.more {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows var(--dur-long) var(--ease-in-out);
-}
-.more > div { overflow: hidden; }
-.card.is-open .more { grid-template-rows: 1fr; }
+.more { display: none; }
+.card.is-open .more { display: block; }
 .more__inner {
   padding-top: var(--space-sm);
   border-top: var(--rule) solid var(--color-rule);

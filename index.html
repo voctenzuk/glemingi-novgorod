@@ -11,9 +11,10 @@
   <link rel="canonical" href="https://voctenzuk.github.io/glemingi-novgorod/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tokens.css">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="tokens.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="mast">
@@ -79,7 +80,18 @@
           <button class="pin" data-cluster="lyubytino" style="left:62%;top:28%" type="button" aria-pressed="false">Любытино</button>
           <button class="pin" data-cluster="moshenskoe" style="left:84%;top:32%" type="button" aria-pressed="false">Мошенское</button>
         </div>
-        <div class="atlas__mobile-pins" aria-label="Кластеры"></div>
+        <div class="atlas__mobile-pins" aria-label="Кластеры">
+          <button class="chip" type="button" data-filter="cluster" data-value="chechulino">Чечулино</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="belaya-gora">Белка</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="retlyo">Ретлё</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="korostyn">Коростынь</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="russa">Старая Русса</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="valdai">Валдай</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="seliger">Демянск</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="lyubytino">Любытино</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="moshenskoe">Мошенское</button>
+          <button class="chip" type="button" data-filter="cluster" data-value="batetsky">Батецкий</button>
+        </div>
       </div>
     </section>
 
@@ -98,11 +110,237 @@
         <button class="chip" type="button" data-filter="cluster" data-value="moshenskoe" aria-pressed="false">Мошенское</button>
         <button class="chip" type="button" data-filter="cluster" data-value="batetsky" aria-pressed="false">Батецкий</button>
         <button class="chip" type="button" data-filter="bed" data-value="double" aria-pressed="false">Двуспальная</button>
-        <span class="count" id="count"></span>
+        <span class="count" id="count">15 из 15</span>
       </div>
     </div>
 
-    <section class="wrap catalogue" id="catalogue" aria-live="polite"></section>
+    <section class="wrap catalogue" id="catalogue" aria-live="polite">
+<article class="card" id="place-smaland" data-id="smaland" data-cluster="chechulino" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
+        <div class="card__kicker">Чечулино · 20 мин <span class="card__badge">я за</span><span class="card__badge">двуспальная</span></div>
+        <h3>Smaland Хюгге Хаус</h3>
+        <p class="card__place">д. Чечулино, ул. Речная, 15</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/" target="_blank" rel="noopener">4.9 · 91 · Яндекс</a></p>
+        <p>Она: «я за», хотела бы и зимой. Двуспальная на втором этаже, диван внизу. Винил, кухня, терраса, речка в 200 м.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Речка Питьба ~200 м</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>20–30 мин до кремля</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Сауна в части домов / баня-бочка</span></li></ul>
+        <div class="card__price">от 4 990 ₽<span>от 2 ночей</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/" target="_blank" rel="noopener">Яндекс</a><a class="btn" href="https://smaland.rent/" target="_blank" rel="noopener">Сайт</a>
+          <a class="btn" href="tel:+79119237640">+7 911 923-76-40</a>
+          <button class="btn" type="button" data-more="smaland" data-label="Отзывы" aria-expanded="false">Отзывы</button>
+        </div>
+        <div class="more" id="more-smaland"><div class="more__inner"><blockquote class="quote">«Даже в мороз нам было очень тепло — греется тёплым полом.»<footer>гость · tropki · 2025</footer></blockquote><div class="voices"><div><h4>Плюсы</h4><ul><li>тихо, всё уже внутри</li><li>двуспальная на 2 этаже</li><li>тепло зимой</li></ul></div><div><h4>Минусы</h4><ul><li>от двух ночей</li><li>деревня, не берег озера</li></ul></div></div><p>Telegram @smaland_rent. Форумов нет — живые отзывы на Яндексе.</p><p>д. Чечулино, ул. Речная, 15</p></div></div>
+      </article>
+<article class="card" id="place-truvor" data-id="truvor" data-cluster="valdai" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
+        <div class="card__kicker">Валдай <span class="card__badge">близко</span><span class="card__badge">двуспальная</span></div>
+        <h3>Трувор</h3>
+        <p class="card__place">д. Полосы, Середейское озеро</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/" target="_blank" rel="noopener">5.0 · 270 · Яндекс</a></p>
+        <p>Она: уже близко к желаниям. На Яндексе номеров нет — сайт или телефон. Есть Дом Мини на двоих.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Реликтовые сосны, тропа вокруг озера</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~2 часа от Новгорода</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Двухуровневая парная и купель</span></li></ul>
+        <div class="card__price">от ~15 000 ₽<span>выходные дороже</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://truvor.camp/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://vk.com/truvorglamping" target="_blank" rel="noopener">VK</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/" target="_blank" rel="noopener">Яндекс отзывы</a>
+          <a class="btn" href="tel:+79524885000">+7 952 488-50-00</a>
+          <button class="btn" type="button" data-more="truvor" data-label="Отзывы" aria-expanded="false">Отзывы</button>
+        </div>
+        <div class="more" id="more-truvor"><div class="more__inner"><blockquote class="quote">«Для двоих домик достаточный, чтобы провести романтический вечер.»<footer>Ольга · 101hotels · янв 2026</footer></blockquote><div class="voices"><div><h4>Плюсы</h4><ul><li>озеро и сосны</li><li>Mini-дом на двоих</li><li>VK: создан для пар</li></ul></div><div><h4>Минусы</h4><ul><li>нет интернета</li><li>комары, слышимость</li><li>смотри дом — не куб за 70 тыс</li></ul></div></div><p>Бронь только truvor.camp, не Яндекс. Жёсткий отзыв про пластик — большой дом на праздники.</p><p>д. Полосы, Середейское озеро</p></div></div>
+      </article>
+<article class="card" id="place-belka" data-id="belka" data-cluster="belaya-gora" data-season="year" data-pick="yes" data-bed="double" data-her="yes">
+        <div class="card__kicker">Белая Гора · М-10 <span class="card__badge">места есть</span><span class="card__badge">двуспальная</span></div>
+        <h3>Белка</h3>
+        <p class="card__place">д. Белая Гора, трасса М-10, 491-й км</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/belka/" target="_blank" rel="noopener">5.0 · 203 · Яндекс</a></p>
+        <p>Она: треугольные двухэтажные домики, прикольно, места есть. В спальнях широкая двуспальная. Баня, пруд, лес.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Сосны, грибы, пруд с рыбой</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~30 мин от Новгорода, рядом трасса</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Большая баня, мангал у каждого дома</span></li></ul>
+        <div class="card__price">от ~6 000 ₽<span>есть свободные</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/belka/" target="_blank" rel="noopener">Яндекс</a><a class="btn" href="https://bazabelka.ru/" target="_blank" rel="noopener">Сайт</a>
+          <a class="btn" href="tel:+79991961921">+7 999 196-19-21</a>
+          <button class="btn" type="button" data-more="belka" data-label="Отзывы" aria-expanded="false">Отзывы</button>
+        </div>
+        <div class="more" id="more-belka"><div class="more__inner"><blockquote class="quote">«Идеально подходит для выходных вдвоём.»<footer>Павел · 101hotels · авг 2025</footer></blockquote><div class="voices"><div><h4>Плюсы</h4><ul><li>хозяин встречает сам</li><li>баня и пруд</li><li>широкая двуспальная</li></ul></div><div><h4>Минусы</h4><ul><li>интернет слабый</li><li>подъезд разбит лесовозами</li></ul></div></div><p>Ещё тел. +7 911 970-78-00. VK живой группы нет.</p><p>д. Белая Гора, трасса М-10, 491-й км</p></div></div>
+      </article>
+<article class="card" id="place-kosmosfera" data-id="kosmosfera" data-cluster="retlyo" data-season="year" data-pick="no" data-bed="double" data-her="yes">
+        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">на лето</span><span class="card__badge">двуспальная</span></div>
+        <h3>КосмоСфера</h3>
+        <p class="card__place">д. Ретлё, ул. Ильменская, 19</p>
+        <p class="rating"><a href="https://101hotels.com/opinions/hotel/retlyo/zagorodniy_otel_glemping_park_kosmosfera.html" target="_blank" rel="noopener">9.6 · 11 · 101hotels</a></p>
+        <p>Она: на поле, свободных нет, место пока не зацепило. Летом на мероприятия — можно.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Ильмень рядом, глубина в этом месте < 1 м</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Баня есть; удобства не во всех сферах свои</span></li></ul>
+        <div class="card__price">от ~6 900 ₽<span>сейчас нет мест</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://parkglampov.ru/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://vk.com/parkglampov" target="_blank" rel="noopener">VK</a>
+          
+          <button class="btn" type="button" data-more="kosmosfera" data-label="Отзывы" aria-expanded="false">Отзывы</button>
+        </div>
+        <div class="more" id="more-kosmosfera"><div class="more__inner"><blockquote class="quote">«Озеро здесь глубже метра не наберёшь — по-настоящему не поплаваешь.»<footer>Konstantin · OneTwoTrip · 2023</footer></blockquote><div class="voices"><div><h4>Плюсы</h4><ul><li>закаты с Ильменя</li><li>сферы с панорамой</li><li>персонал</li></ul></div><div><h4>Минусы</h4><ul><li>поле</li><li>в части куполов душ общий</li><li>слепни</li></ul></div></div><p>На лето, не на эти выходные.</p><p>д. Ретлё, ул. Ильменская, 19</p></div></div>
+      </article>
+<article class="card" id="place-shaste" data-id="shaste" data-cluster="retlyo" data-season="year" data-pick="yes" data-bed="double" data-her="no">
+        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">ей зашло</span><span class="card__badge">двуспальная</span></div>
+        <h3>Щастье</h3>
+        <p class="card__place">д. Ретлё, ул. Ильменская, 38В</p>
+        
+        <p>Ей зашло. Панорамный дом-контейнер на первой береговой линии, в Ильменском глинте. Одна двуспальная кровать, не две односпальные. На сайте писали: работает один дом — бронировать сразу.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>50 м до пляжа, вид на Ильмень</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода, 25–35 км до Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Кухня, тёплые полы, душ внутри</span></li></ul>
+        <div class="card__price">от ~6 500 ₽<span>дом на двоих</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://xn--80ak9ae6av.xn--p1acf/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/shchaste/" target="_blank" rel="noopener">Яндекс</a>
+          <a class="btn" href="tel:+79117900078">+7 911 790-00-78</a>
+          <button class="btn" type="button" data-more="shaste" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-shaste"><div class="more__inner"><p>Тел. +7 911 790-00-78. happy.ilmen@yandex.ru</p><p>д. Ретлё, ул. Ильменская, 38В</p></div></div>
+      </article>
+<article class="card" id="place-kamen" data-id="kamen" data-cluster="retlyo" data-season="year" data-pick="yes" data-bed="double" data-her="no">
+        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">двуспальная</span></div>
+        <h3>Усадьба Большой Камень</h3>
+        <p class="card__place">д. Ретлё, ул. Вишнёвая, 34</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/usadba-bolshoi-kamen/" target="_blank" rel="noopener">5.0 · 156 · Яндекс</a></p>
+        <p>Она смотрела: есть свободный домик с баней внутри и двуспальной 180×200. Мини-коттедж на 4 человек: спальня + диван. В больших домах — сауна на дровах и бассейн или купель.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Баня в каждом доме, в мини-коттедже тоже внутри</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>70 км от Новгорода, 25 км от Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Южный берег Ильменя, глинт рядом</span></li></ul>
+        <div class="card__price">от ~11 000 ₽<span>мини-коттедж с баней</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://bolshoj-kamen.ru/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://bolshoj-kamen.ru/booking" target="_blank" rel="noopener">Бронь</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/usadba-bolshoi-kamen/" target="_blank" rel="noopener">Яндекс</a>
+          <a class="btn" href="tel:+79213464572">+7 921 346-45-72</a>
+          <button class="btn" type="button" data-more="kamen" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-kamen"><div class="more__inner"><p>Сайт bolshoj-kamen.ru</p><p>д. Ретлё, ул. Вишнёвая, 34</p></div></div>
+      </article>
+<article class="card" id="place-ilmera" data-id="ilmera" data-cluster="retlyo" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Ретлё · Ильмень <span class="card__badge">двуспальная</span></div>
+        <h3>Ильмера</h3>
+        <p class="card__place">д. Ретлё, ул. Ильменская, 52</p>
+        
+        <p>Эко-отель, который она внесла в список. Барнхаус 28 м²: двуспальная кровать, диван, санузел внутри, камин, панорама на Ильмень. Отдельный термоСПА: парная, фурако, финская сауна.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>~200 м до воды, галька</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода, 35 км от Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>ТермоСПА на территории, не в домике</span></li></ul>
+        <div class="card__price">от 6 000 ₽<span>барн на двоих</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://ilmerapark.ru/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://ilmerapark.ru/booking" target="_blank" rel="noopener">Бронь</a>
+          <a class="btn" href="tel:+79211978700">+7 921 197-87-00</a>
+          <button class="btn" type="button" data-more="ilmera" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-ilmera"><div class="more__inner"><p>Тариф «Свидание» на двоих. 100% предоплата, отмена за сутки.</p><p>д. Ретлё, ул. Ильменская, 52</p></div></div>
+      </article>
+<article class="card" id="place-lakepark" data-id="lakepark" data-cluster="korostyn" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Коростынь <span class="card__badge">двуспальная</span></div>
+        <h3>Lake Park</h3>
+        <p class="card__place">д. Коростынь, ул. Озёрная, 54</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/" target="_blank" rel="noopener">4.9 · 239 · Яндекс</a></p>
+        <p>Тот же южный берег Ильменя, ~8 км от Ретлё. Отдельные дома с двуспальной кроватью, терраса, печь-барбекю. Баня на дровах с видом на озеро.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Первая линия, пляж, сапы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1 час от Новгорода, 30 км до Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Русская баня, купель — почасово</span></li></ul>
+        <div class="card__price">от ~6 200 ₽<span>дом с двуспальной</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/" target="_blank" rel="noopener">Яндекс</a><a class="btn" href="https://novgorod.travel/hotels/gostevoy-kompleks-lake-park-leyk-park" target="_blank" rel="noopener">novgorod.travel</a>
+          <a class="btn" href="tel:+79216981498">+7 921 698-14-98</a>
+          <button class="btn" type="button" data-more="lakepark" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-lakepark"><div class="more__inner"><p>д. Коростынь, ул. Озёрная, 54</p></div></div>
+      </article>
+<article class="card" id="place-lesiluga" data-id="lesiluga" data-cluster="russa" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Старая Русса <span class="card__badge">двуспальная</span></div>
+        <h3>Лес и Луга</h3>
+        <p class="card__place">Старая Русса, берег реки Порусьи</p>
+        
+        <p>Эко-отель у города-курорта, не на Ильмене: река, поля, лес. Дома стоят в 50–100 м друг от друга, только семьи, без шумных компаний. Банный комплекс с чаном на берегу реки.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Река Порусья, частный пляж</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~1,5 часа от Новгорода, в черте Старой Руссы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Парная с окном, чан, купель</span></li></ul>
+        <div class="card__price">от 6 500 ₽<span>дом, тихий формат</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://les-i-luga.ru/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://travel.yandex.ru/hotels/novgorod-oblast/les-i-luga/" target="_blank" rel="noopener">Яндекс</a>
+          <a class="btn" href="tel:+89817150509">8 981 715-05-09</a>
+          <button class="btn" type="button" data-more="lesiluga" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-lesiluga"><div class="more__inner"><p>Рядом музей Достоевского и минеральные источники. Не озеро-море, зато город под рукой.</p><p>Старая Русса, берег реки Порусьи</p></div></div>
+      </article>
+<article class="card" id="place-seredeya" data-id="seredeya" data-cluster="valdai" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Валдай <span class="card__badge">двуспальная</span></div>
+        <h3>Середея Парк</h3>
+        <p class="card__place">Нацпарк «Валдайский», Середейское озеро</p>
+        
+        <p>Официальный глэмпинг парка. Три всесезонных домика со стеклянным фронтоном, до 4 человек. Пирс. Тише и казённее, чем Трувор.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Пирс на Середейском</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>От станции Валдай на такси</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Мачтовые сосны</span></li></ul>
+        <div class="card__price">11 500 ₽<span>домик / сутки</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://www.valdaypark.ru/accommodation/glamping" target="_blank" rel="noopener">Сайт парка</a>
+          <a class="btn" href="tel:+78166628671">+7 81666 2-86-71</a>
+          <button class="btn" type="button" data-more="seredeya" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-seredeya"><div class="more__inner"><p>Предоплата за сутки, при отмене не возвращается.</p><p>Нацпарк «Валдайский», Середейское озеро</p></div></div>
+      </article>
+<article class="card" id="place-atmosfera" data-id="atmosfera" data-cluster="seliger" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Селигер <span class="card__badge">двуспальная</span></div>
+        <h3>Атмосфера</h3>
+        <p class="card__place">д. Приозёрная, Демянский округ</p>
+        
+        <p>Три геокупола. Романтический «Сатурн» — на двоих. Свой санузел, тёплый пол. Берег заболоченный, пляж в соседней деревне. Дальше Ретлё, зато тише.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Первая линия Селигера</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>Демянск, длиннее чем до Ильменя</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg><span>Мангал у сферы</span></li></ul>
+        <div class="card__price">от ~6 200 ₽<span>геокупол</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/glemping-atmosfera-seliger/" target="_blank" rel="noopener">Яндекс</a>
+          
+          <button class="btn" type="button" data-more="atmosfera" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-atmosfera"><div class="more__inner"><p>д. Приозёрная, Демянский округ</p></div></div>
+      </article>
+<article class="card" id="place-seliger-club" data-id="seliger-club" data-cluster="seliger" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Демянск · Селигер <span class="card__badge">двуспальная</span></div>
+        <h3>Seliger Club</h3>
+        <p class="card__place">д. Кривая Клетка, ул. Набережная, 31А</p>
+        
+        <p>Сканди-дома на Полновском плёсе, новгородская сторона Селигера. Завтрак, лодки. Огонь на территории запрещён. Дорога длиннее, чем до Ретлё.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Полновский плёс</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>Демянский округ, ~2 часа</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Водные грили вместо мангалов</span></li></ul>
+        <div class="card__price">по датам<span>завтрак включён</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/seliger-klub/" target="_blank" rel="noopener">Яндекс</a>
+          
+          <button class="btn" type="button" data-more="seliger-club" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-seliger-club"><div class="more__inner"><p>д. Кривая Клетка, ул. Набережная, 31А</p></div></div>
+      </article>
+<article class="card" id="place-vidomlicy" data-id="vidomlicy" data-cluster="lyubytino" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Любытино · Мста <span class="card__badge">двуспальная</span></div>
+        <h3>Видомлицы</h3>
+        <p class="card__place">д. Видомлицы, Любытинский округ</p>
+        <p class="rating"><a href="https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/" target="_blank" rel="noopener">4.9 · 65 · Яндекс</a></p>
+        <p>10 сафари-тентов на Мсте. Есть тент с одной двуспальной — берите его, не вариант с двумя односпальными. Душ в отдельном доме. ~2 часа от Новгорода, ближе к Боровичам и Окуловке.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Мста, пляж рядом</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~2 часа; электричка до Окуловки + такси</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Круглый год, тёплые простыни</span></li></ul>
+        <div class="card__price">от ~5 800 ₽<span>тент с двуспальной</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/" target="_blank" rel="noopener">Яндекс</a><a class="btn" href="https://novgorod.travel/hotels/glemping-vidolmlitsy" target="_blank" rel="noopener">novgorod.travel</a>
+          <a class="btn" href="tel:+79052336866">+7 905 233-68-66</a>
+          <button class="btn" type="button" data-more="vidomlicy" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-vidomlicy"><div class="more__inner"><p>Сайт glamping-vidomlicy.ru.</p><p>д. Видомлицы, Любытинский округ</p></div></div>
+      </article>
+<article class="card" id="place-chuchemlya" data-id="chuchemlya" data-cluster="moshenskoe" data-season="year" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Мошенское <span class="card__badge">двуспальная</span></div>
+        <h3>Chuchemlya eco village</h3>
+        <p class="card__place">д. Чучемля, Мошенской округ</p>
+        
+        <p>Три дома на лесном озере, людей вокруг нет. Green и Brown от ~7–8 000 ₽, Blue с сауной и пирсом дороже. Сапсан до Окуловки/Угловки + час на такси.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Озеро Чучемля, баня на воде</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>~2,5–3 часа; ближе к Боровичам, чем к Новгороду</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Ферма, тишина, зимой работает</span></li></ul>
+        <div class="card__price">от 7 000 ₽<span>дом у озера</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://chuchemlya.com/" target="_blank" rel="noopener">Сайт</a><a class="btn" href="https://novgorod.travel/hotels/chuchemlya-eco-village" target="_blank" rel="noopener">novgorod.travel</a>
+          <a class="btn" href="tel:+79268918546">+7 926 891-85-46</a>
+          <button class="btn" type="button" data-more="chuchemlya" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-chuchemlya"><div class="more__inner"><p>chuchemlya.com · welcome@chuchemlya.com</p><p>д. Чучемля, Мошенской округ</p></div></div>
+      </article>
+<article class="card" id="place-pole" data-id="pole" data-cluster="batetsky" data-season="summer" data-pick="no" data-bed="double" data-her="no">
+        <div class="card__kicker">Батецкий · Луга <span class="card__badge">двуспальная</span></div>
+        <h3>Поле Бесконечности</h3>
+        <p class="card__place">д. Большой Волок, Батецкий округ</p>
+        
+        <p>Семь шатров на 37 га у Луги. Сезон май–сентябрь — к середине сентября могут уже закрыться. Ближе к Петербургу, чем к востоку области.</p>
+        <ul class="card__facts"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg><span>Река Луга, сапы</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg><span>Запад области, ~1,5 часа от Новгорода</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg><span>Поле, типи, печь-буржуйка</span></li></ul>
+        <div class="card__price">от 2 500 ₽<span>шатёр, только лето</span></div>
+        <div class="card__actions">
+          <a class="btn btn--solid" href="https://novgorod.travel/hotels/glemping-pole-beskonechnosti" target="_blank" rel="noopener">novgorod.travel</a><a class="btn" href="https://vk.com/8glamp" target="_blank" rel="noopener">ВКонтакте</a>
+          <a class="btn" href="tel:+79213489884">+7 921 348-98-84</a>
+          <button class="btn" type="button" data-more="pole" data-label="Подробнее" aria-expanded="false">Подробнее</button>
+        </div>
+        <div class="more" id="more-pole"><div class="more__inner"><p>VK: vk.com/8glamp</p><p>д. Большой Волок, Батецкий округ</p></div></div>
+      </article>
+    </section>
     <p class="wrap empty" id="empty">В этом срезе ничего нет. Снимите фильтр или выберите другой берег.</p>
   </main>
 
@@ -130,452 +368,114 @@
     </div>
   </footer>
 
+
   <script>
-    const ICO = {
-      water: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/><path d="M3 18c2.2-2.4 4.2-2.4 6.2 0 2 2.4 4.2 2.4 6.2 0 2-2.4 4.4-2.4 6.6 0"/></svg>',
-      forest: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 6 11h3.2L5 21h14l-4.2-10H18z"/></svg>',
-      car: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16h14l1.5-4.5L18 8H6L3.5 11.5z"/><path d="M5 16v3M19 16v3M8 19h0M16 19h0"/></svg>',
-      bath: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h16v3.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5z"/><path d="M7 13V7.5A2.5 2.5 0 0 1 9.5 5H12"/></svg>'
-    };
+    (function () {
+      const state = { cluster: "all", bed: "all", her: false };
+      const cards = document.querySelectorAll("#catalogue .card");
+      const empty = document.getElementById("empty");
+      const count = document.getElementById("count");
 
-    const PLACES = [
-      {
-        id: "smaland", cluster: "chechulino", clusterLabel: "Чечулино · 20 мин",
-        name: "Smaland Хюгге Хаус", pick: true, her: true, herLabel: "я за", bed: "double",
-        place: "д. Чечулино, ул. Речная, 15",
-        blurb: "Она: «я за», хотела бы и зимой. Двуспальная на втором этаже, диван внизу. Винил, кухня, терраса, речка в 200 м.",
-        facts: [
-          ["water", "Речка Питьба ~200 м"],
-          ["car", "20–30 мин до кремля"],
-          ["bath", "Сауна в части домов / баня-бочка"]
-        ],
-        price: "от 4 990 ₽", priceNote: "от 2 ночей", season: "year",
-        tel: "79119237640", telLabel: "+7 911 923-76-40",
-        rating: { score: "4.9", count: "91", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/" },
-        quote: { text: "Даже в мороз нам было очень тепло — греется тёплым полом.", meta: "гость · tropki · 2025" },
-        plus: ["тихо, всё уже внутри", "двуспальная на 2 этаже", "тепло зимой"],
-        minus: ["от двух ночей", "деревня, не берег озера"],
-        extra: "Telegram @smaland_rent. Форумов нет — живые отзывы на Яндексе.",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/smaland-khiugge-khaus/"],
-          ["Сайт", "https://smaland.rent/"]
-        ]
-      },
-      {
-        id: "truvor", cluster: "valdai", clusterLabel: "Валдай",
-        name: "Трувор", pick: true, her: true, herLabel: "близко", bed: "double",
-        place: "д. Полосы, Середейское озеро",
-        blurb: "Она: уже близко к желаниям. На Яндексе номеров нет — сайт или телефон. Есть Дом Мини на двоих.",
-        facts: [
-          ["forest", "Реликтовые сосны, тропа вокруг озера"],
-          ["car", "~2 часа от Новгорода"],
-          ["bath", "Двухуровневая парная и купель"]
-        ],
-        price: "от ~15 000 ₽", priceNote: "выходные дороже", season: "year",
-        tel: "79524885000", telLabel: "+7 952 488-50-00",
-        rating: { score: "5.0", count: "270", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/" },
-        quote: { text: "Для двоих домик достаточный, чтобы провести романтический вечер.", meta: "Ольга · 101hotels · янв 2026" },
-        plus: ["озеро и сосны", "Mini-дом на двоих", "VK: создан для пар"],
-        minus: ["нет интернета", "комары, слышимость", "смотри дом — не куб за 70 тыс"],
-        extra: "Бронь только truvor.camp, не Яндекс. Жёсткий отзыв про пластик — большой дом на праздники.",
-        links: [
-          ["Сайт", "https://truvor.camp/"],
-          ["VK", "https://vk.com/truvorglamping"],
-          ["Яндекс отзывы", "https://travel.yandex.ru/hotels/novgorod-oblast/truvor/reviews/"]
-        ]
-      },
-      {
-        id: "belka", cluster: "belaya-gora", clusterLabel: "Белая Гора · М-10",
-        name: "Белка", pick: true, her: true, herLabel: "места есть", bed: "double",
-        place: "д. Белая Гора, трасса М-10, 491-й км",
-        blurb: "Она: треугольные двухэтажные домики, прикольно, места есть. В спальнях широкая двуспальная. Баня, пруд, лес.",
-        facts: [
-          ["forest", "Сосны, грибы, пруд с рыбой"],
-          ["car", "~30 мин от Новгорода, рядом трасса"],
-          ["bath", "Большая баня, мангал у каждого дома"]
-        ],
-        price: "от ~6 000 ₽", priceNote: "есть свободные", season: "year",
-        tel: "79991961921", telLabel: "+7 999 196-19-21",
-        rating: { score: "5.0", count: "203", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/belka/" },
-        quote: { text: "Идеально подходит для выходных вдвоём.", meta: "Павел · 101hotels · авг 2025" },
-        plus: ["хозяин встречает сам", "баня и пруд", "широкая двуспальная"],
-        minus: ["интернет слабый", "подъезд разбит лесовозами"],
-        extra: "Ещё тел. +7 911 970-78-00. VK живой группы нет.",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/belka/"],
-          ["Сайт", "https://bazabelka.ru/"]
-        ]
-      },
-      {
-        id: "kosmosfera", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "КосмоСфера", pick: false, her: true, herLabel: "на лето", bed: "double",
-        place: "д. Ретлё, ул. Ильменская, 19",
-        blurb: "Она: на поле, свободных нет, место пока не зацепило. Летом на мероприятия — можно.",
-        facts: [
-          ["water", "Ильмень рядом, глубина в этом месте < 1 м"],
-          ["car", "~1 час от Новгорода"],
-          ["bath", "Баня есть; удобства не во всех сферах свои"]
-        ],
-        price: "от ~6 900 ₽", priceNote: "сейчас нет мест", season: "year",
-        rating: { score: "9.6", count: "11", source: "101hotels", url: "https://101hotels.com/opinions/hotel/retlyo/zagorodniy_otel_glemping_park_kosmosfera.html" },
-        quote: { text: "Озеро здесь глубже метра не наберёшь — по-настоящему не поплаваешь.", meta: "Konstantin · OneTwoTrip · 2023" },
-        plus: ["закаты с Ильменя", "сферы с панорамой", "персонал"],
-        minus: ["поле", "в части куполов душ общий", "слепни"],
-        extra: "На лето, не на эти выходные.",
-        links: [
-          ["Сайт", "https://parkglampov.ru/"],
-          ["VK", "https://vk.com/parkglampov"]
-        ]
-      },
-      {
-        id: "shaste", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "Щастье", pick: true, herLabel: "ей зашло", bed: "double",
-        place: "д. Ретлё, ул. Ильменская, 38В",
-        blurb: "Ей зашло. Панорамный дом-контейнер на первой береговой линии, в Ильменском глинте. Одна двуспальная кровать, не две односпальные. На сайте писали: работает один дом — бронировать сразу.",
-        facts: [
-          ["water", "50 м до пляжа, вид на Ильмень"],
-          ["car", "~1 час от Новгорода, 25–35 км до Старой Руссы"],
-          ["bath", "Кухня, тёплые полы, душ внутри"]
-        ],
-        price: "от ~6 500 ₽", priceNote: "дом на двоих", season: "year",
-        extra: "Тел. +7 911 790-00-78. happy.ilmen@yandex.ru",
-        tel: "79117900078", telLabel: "+7 911 790-00-78",
-        links: [
-          ["Сайт", "https://xn--80ak9ae6av.xn--p1acf/"],
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/shchaste/"]
-        ]
-      },
-      {
-        id: "kamen", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "Усадьба Большой Камень", pick: true, bed: "double",
-        place: "д. Ретлё, ул. Вишнёвая, 34",
-        blurb: "Она смотрела: есть свободный домик с баней внутри и двуспальной 180×200. Мини-коттедж на 4 человек: спальня + диван. В больших домах — сауна на дровах и бассейн или купель.",
-        facts: [
-          ["bath", "Баня в каждом доме, в мини-коттедже тоже внутри"],
-          ["car", "70 км от Новгорода, 25 км от Старой Руссы"],
-          ["water", "Южный берег Ильменя, глинт рядом"]
-        ],
-        price: "от ~11 000 ₽", priceNote: "мини-коттедж с баней", season: "year",
-        tel: "79213464572", telLabel: "+7 921 346-45-72",
-        rating: { score: "5.0", count: "156", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/usadba-bolshoi-kamen/" },
-        extra: "Сайт bolshoj-kamen.ru",
-        links: [
-          ["Сайт", "https://bolshoj-kamen.ru/"],
-          ["Бронь", "https://bolshoj-kamen.ru/booking"],
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/usadba-bolshoi-kamen/"]
-        ]
-      },
-      {
-        id: "ilmera", cluster: "retlyo", clusterLabel: "Ретлё · Ильмень",
-        name: "Ильмера", pick: false, bed: "double",
-        place: "д. Ретлё, ул. Ильменская, 52",
-        blurb: "Эко-отель, который она внесла в список. Барнхаус 28 м²: двуспальная кровать, диван, санузел внутри, камин, панорама на Ильмень. Отдельный термоСПА: парная, фурако, финская сауна.",
-        facts: [
-          ["water", "~200 м до воды, галька"],
-          ["car", "~1 час от Новгорода, 35 км от Старой Руссы"],
-          ["bath", "ТермоСПА на территории, не в домике"]
-        ],
-        price: "от 6 000 ₽", priceNote: "барн на двоих", season: "year",
-        tel: "79211978700", telLabel: "+7 921 197-87-00",
-        extra: "Тариф «Свидание» на двоих. 100% предоплата, отмена за сутки.",
-        links: [
-          ["Сайт", "https://ilmerapark.ru/"],
-          ["Бронь", "https://ilmerapark.ru/booking"]
-        ]
-      },
-      {
-        id: "lakepark", cluster: "korostyn", clusterLabel: "Коростынь",
-        name: "Lake Park", pick: false, bed: "double",
-        place: "д. Коростынь, ул. Озёрная, 54",
-        blurb: "Тот же южный берег Ильменя, ~8 км от Ретлё. Отдельные дома с двуспальной кроватью, терраса, печь-барбекю. Баня на дровах с видом на озеро.",
-        rating: { score: "4.9", count: "239", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/" },
-        facts: [
-          ["water", "Первая линия, пляж, сапы"],
-          ["car", "~1 час от Новгорода, 30 км до Старой Руссы"],
-          ["bath", "Русская баня, купель — почасово"]
-        ],
-        price: "от ~6 200 ₽", priceNote: "дом с двуспальной", season: "year",
-        tel: "79216981498", telLabel: "+7 921 698-14-98",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/baza-otdykha-lake-park/"],
-          ["novgorod.travel", "https://novgorod.travel/hotels/gostevoy-kompleks-lake-park-leyk-park"]
-        ]
-      },
-      {
-        id: "lesiluga", cluster: "russa", clusterLabel: "Старая Русса",
-        name: "Лес и Луга", pick: false, bed: "double",
-        place: "Старая Русса, берег реки Порусьи",
-        blurb: "Эко-отель у города-курорта, не на Ильмене: река, поля, лес. Дома стоят в 50–100 м друг от друга, только семьи, без шумных компаний. Банный комплекс с чаном на берегу реки.",
-        facts: [
-          ["water", "Река Порусья, частный пляж"],
-          ["car", "~1,5 часа от Новгорода, в черте Старой Руссы"],
-          ["bath", "Парная с окном, чан, купель"]
-        ],
-        price: "от 6 500 ₽", priceNote: "дом, тихий формат", season: "year",
-        tel: "89817150509", telLabel: "8 981 715-05-09",
-        extra: "Рядом музей Достоевского и минеральные источники. Не озеро-море, зато город под рукой.",
-        links: [
-          ["Сайт", "https://les-i-luga.ru/"],
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/les-i-luga/"]
-        ]
-      },
-
-      {
-        id: "seredeya", cluster: "valdai", clusterLabel: "Валдай",
-        name: "Середея Парк", pick: false, bed: "double",
-        place: "Нацпарк «Валдайский», Середейское озеро",
-        blurb: "Официальный глэмпинг парка. Три всесезонных домика со стеклянным фронтоном, до 4 человек. Пирс. Тише и казённее, чем Трувор.",
-        facts: [
-          ["water", "Пирс на Середейском"],
-          ["car", "От станции Валдай на такси"],
-          ["forest", "Мачтовые сосны"]
-        ],
-        price: "11 500 ₽", priceNote: "домик / сутки", season: "year",
-        tel: "78166628671", telLabel: "+7 81666 2-86-71",
-        extra: "Предоплата за сутки, при отмене не возвращается.",
-        links: [
-          ["Сайт парка", "https://www.valdaypark.ru/accommodation/glamping"]
-        ]
-      },
-      {
-        id: "atmosfera", cluster: "seliger", clusterLabel: "Селигер",
-        name: "Атмосфера", pick: false, bed: "double",
-        place: "д. Приозёрная, Демянский округ",
-        blurb: "Три геокупола. Романтический «Сатурн» — на двоих. Свой санузел, тёплый пол. Берег заболоченный, пляж в соседней деревне. Дальше Ретлё, зато тише.",
-        facts: [
-          ["water", "Первая линия Селигера"],
-          ["car", "Демянск, длиннее чем до Ильменя"],
-          ["bath", "Мангал у сферы"]
-        ],
-        price: "от ~6 200 ₽", priceNote: "геокупол", season: "year",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-atmosfera-seliger/"]
-        ]
-      },
-      {
-        id: "seliger-club", cluster: "seliger", clusterLabel: "Демянск · Селигер",
-        name: "Seliger Club", pick: false, bed: "double",
-        place: "д. Кривая Клетка, ул. Набережная, 31А",
-        blurb: "Сканди-дома на Полновском плёсе, новгородская сторона Селигера. Завтрак, лодки. Огонь на территории запрещён. Дорога длиннее, чем до Ретлё.",
-        facts: [
-          ["water", "Полновский плёс"],
-          ["car", "Демянский округ, ~2 часа"],
-          ["forest", "Водные грили вместо мангалов"]
-        ],
-        price: "по датам", priceNote: "завтрак включён", season: "year",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/seliger-klub/"]
-        ]
-      },
-      {
-        id: "vidomlicy", cluster: "lyubytino", clusterLabel: "Любытино · Мста",
-        name: "Видомлицы", pick: false, bed: "double",
-        place: "д. Видомлицы, Любытинский округ",
-        blurb: "10 сафари-тентов на Мсте. Есть тент с одной двуспальной — берите его, не вариант с двумя односпальными. Душ в отдельном доме. ~2 часа от Новгорода, ближе к Боровичам и Окуловке.",
-        facts: [
-          ["water", "Мста, пляж рядом"],
-          ["car", "~2 часа; электричка до Окуловки + такси"],
-          ["forest", "Круглый год, тёплые простыни"]
-        ],
-        price: "от ~5 800 ₽", priceNote: "тент с двуспальной", season: "year",
-        tel: "79052336866", telLabel: "+7 905 233-68-66",
-        rating: { score: "4.9", count: "65", source: "Яндекс", url: "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/" },
-        extra: "Сайт glamping-vidomlicy.ru.",
-        links: [
-          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/"],
-          ["novgorod.travel", "https://novgorod.travel/hotels/glemping-vidolmlitsy"]
-        ]
-      },
-      {
-        id: "chuchemlya", cluster: "moshenskoe", clusterLabel: "Мошенское",
-        name: "Chuchemlya eco village", pick: false, bed: "double",
-        place: "д. Чучемля, Мошенской округ",
-        blurb: "Три дома на лесном озере, людей вокруг нет. Green и Brown от ~7–8 000 ₽, Blue с сауной и пирсом дороже. Сапсан до Окуловки/Угловки + час на такси.",
-        facts: [
-          ["water", "Озеро Чучемля, баня на воде"],
-          ["car", "~2,5–3 часа; ближе к Боровичам, чем к Новгороду"],
-          ["forest", "Ферма, тишина, зимой работает"]
-        ],
-        price: "от 7 000 ₽", priceNote: "дом у озера", season: "year",
-        tel: "79268918546", telLabel: "+7 926 891-85-46",
-        extra: "chuchemlya.com · welcome@chuchemlya.com",
-        links: [
-          ["Сайт", "https://chuchemlya.com/"],
-          ["novgorod.travel", "https://novgorod.travel/hotels/chuchemlya-eco-village"]
-        ]
-      },
-      {
-        id: "pole", cluster: "batetsky", clusterLabel: "Батецкий · Луга",
-        name: "Поле Бесконечности", pick: false, bed: "double",
-        place: "д. Большой Волок, Батецкий округ",
-        blurb: "Семь шатров на 37 га у Луги. Сезон май–сентябрь — к середине сентября могут уже закрыться. Ближе к Петербургу, чем к востоку области.",
-        facts: [
-          ["water", "Река Луга, сапы"],
-          ["car", "Запад области, ~1,5 часа от Новгорода"],
-          ["forest", "Поле, типи, печь-буржуйка"]
-        ],
-        price: "от 2 500 ₽", priceNote: "шатёр, только лето", season: "summer",
-        tel: "79213489884", telLabel: "+7 921 348-98-84",
-        extra: "VK: vk.com/8glamp",
-        links: [
-          ["novgorod.travel", "https://novgorod.travel/hotels/glemping-pole-beskonechnosti"],
-          ["ВКонтакте", "https://vk.com/8glamp"]
-        ]
+      function visible(card) {
+        const c = state.cluster === "all" || card.getAttribute("data-cluster") === state.cluster;
+        const b = state.bed === "all" || card.getAttribute("data-bed") === state.bed;
+        const h = !state.her || card.getAttribute("data-her") === "yes";
+        return c && b && h;
       }
-    ];
 
-    const state = { cluster: "all", bed: "all", her: false };
-    const catalogue = document.getElementById("catalogue");
-    const empty = document.getElementById("empty");
-    const count = document.getElementById("count");
+      function render() {
+        let n = 0;
+        cards.forEach(function (el) {
+          const on = visible(el);
+          el.classList.toggle("is-hidden", !on);
+          if (on) n += 1;
+        });
+        if (count) count.textContent = n + " из " + cards.length;
+        if (empty) empty.classList.toggle("is-on", n === 0);
+      }
 
-    function visible(p) {
-      const c = state.cluster === "all" || p.cluster === state.cluster;
-      const b = state.bed === "all" || p.bed === state.bed;
-      const h = !state.her || p.her;
-      return c && b && h;
-    }
+      function setCluster(value) {
+        state.cluster = state.cluster === value && value !== "all" ? "all" : value;
+        if (value === "all") state.cluster = "all";
+        document.querySelectorAll('[data-filter="cluster"]').forEach(function (el) {
+          el.setAttribute("aria-pressed", String(el.getAttribute("data-value") === state.cluster || (state.cluster === "all" && el.getAttribute("data-value") === "all")));
+        });
+        document.querySelectorAll(".pin").forEach(function (el) {
+          const on = state.cluster !== "all" && el.getAttribute("data-cluster") === state.cluster;
+          el.setAttribute("aria-pressed", String(on));
+        });
+        render();
+      }
 
-    function render() {
-      const shown = PLACES.filter(visible);
-      count.textContent = shown.length + " из " + PLACES.length;
-      empty.classList.toggle("is-on", shown.length === 0);
-      catalogue.querySelectorAll(".card").forEach((el) => {
-        const p = PLACES.find((x) => x.id === el.dataset.id);
-        el.classList.toggle("is-hidden", !visible(p));
+      document.body.addEventListener("click", function (e) {
+        const chip = e.target.closest("[data-filter]");
+        if (chip) {
+          const kind = chip.getAttribute("data-filter");
+          const value = chip.getAttribute("data-value");
+          if (kind === "cluster") setCluster(value);
+          if (kind === "bed") {
+            state.bed = state.bed === value ? "all" : value;
+            document.querySelectorAll('[data-filter="bed"]').forEach(function (el) {
+              el.setAttribute("aria-pressed", String(el.getAttribute("data-value") === state.bed));
+            });
+            render();
+          }
+          if (kind === "her") {
+            state.her = !state.her;
+            document.querySelectorAll('[data-filter="her"]').forEach(function (el) {
+              el.setAttribute("aria-pressed", String(state.her));
+            });
+            render();
+          }
+          return;
+        }
+        const pin = e.target.closest(".pin");
+        if (pin) {
+          setCluster(pin.getAttribute("data-cluster"));
+          document.getElementById("catalogue").scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+        const more = e.target.closest("[data-more]");
+        if (more) {
+          const card = more.closest(".card");
+          const open = !card.classList.contains("is-open");
+          card.classList.toggle("is-open", open);
+          more.setAttribute("aria-expanded", String(open));
+          more.textContent = open ? "Свернуть" : (more.getAttribute("data-label") || "Подробнее");
+        }
       });
-    }
 
-    function cardHTML(p) {
-      const facts = p.facts.map(([k, t]) => `<li>${ICO[k] || ICO.forest}<span>${t}</span></li>`).join("");
-      const links = p.links.map(([label, href], i) =>
-        `<a class="btn${i === 0 ? " btn--solid" : ""}" href="${href}" target="_blank" rel="noopener">${label}</a>`
-      ).join("");
-      const tel = p.tel ? `<a class="btn" href="tel:+${p.tel}">${p.telLabel}</a>` : "";
-      const extra = p.extra ? `<p>${p.extra}</p>` : "";
-      const badges = (p.herLabel ? `<span class="card__badge">${p.herLabel}</span>` : "") +
-        (p.bed === "double" ? `<span class="card__badge">двуспальная</span>` : "");
-      const rating = p.rating
-        ? `<p class="rating"><a href="${p.rating.url}" target="_blank" rel="noopener">${p.rating.score} · ${p.rating.count} · ${p.rating.source}</a></p>`
-        : "";
-      const quote = p.quote
-        ? `<blockquote class="quote">«${p.quote.text}»<footer>${p.quote.meta}</footer></blockquote>`
-        : "";
-      const voices = (p.plus || p.minus)
-        ? `<div class="voices">${p.plus ? `<div><h4>Плюсы</h4><ul>${p.plus.map((x) => `<li>${x}</li>`).join("")}</ul></div>` : ""}${p.minus ? `<div><h4>Минусы</h4><ul>${p.minus.map((x) => `<li>${x}</li>`).join("")}</ul></div>` : ""}</div>`
-        : "";
-      const moreLabel = p.quote || p.plus ? "Отзывы" : "Подробнее";
-      return `<article class="card" id="place-${p.id}" data-id="${p.id}" data-cluster="${p.cluster}" data-season="${p.season}" data-pick="${p.pick ? "yes" : "no"}">
-        <div class="card__kicker">${p.clusterLabel} ${badges}</div>
-        <h3>${p.name}</h3>
-        <p class="card__place">${p.place}</p>
-        ${rating}
-        <p>${p.blurb}</p>
-        <ul class="card__facts">${facts}</ul>
-        <div class="card__price">${p.price}<span>${p.priceNote}</span></div>
-        <div class="card__actions">
-          ${links}
-          ${tel}
-          <button class="btn" type="button" data-more="${p.id}" data-label="${moreLabel}" aria-expanded="false">${moreLabel}</button>
-        </div>
-        <div class="more" id="more-${p.id}"><div class="more__inner">${quote}${voices}${extra}<p>${p.place}</p></div></div>
-      </article>`;
-    }
+      const copy = document.getElementById("copy-link");
+      if (copy) {
+        copy.addEventListener("click", function () {
+          const url = location.href;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(function () {
+              copy.textContent = "Ссылка скопирована";
+            }).catch(function () { window.prompt("Скопируйте ссылку", url); });
+          } else {
+            window.prompt("Скопируйте ссылку", url);
+          }
+        });
+      }
 
-    catalogue.innerHTML = PLACES.map(cardHTML).join("");
-
-    const mobilePins = document.querySelector(".atlas__mobile-pins");
-    ["chechulino", "belaya-gora", "retlyo", "korostyn", "russa", "valdai", "seliger", "lyubytino", "moshenskoe", "batetsky"].forEach((c) => {
-      const labels = { chechulino: "Чечулино", "belaya-gora": "Белка", retlyo: "Ретлё", korostyn: "Коростынь", russa: "Старая Русса", valdai: "Валдай", seliger: "Демянск", lyubytino: "Любытино", moshenskoe: "Мошенское", batetsky: "Батецкий" };
-      const b = document.createElement("button");
-      b.className = "chip";
-      b.type = "button";
-      b.dataset.filter = "cluster";
-      b.dataset.value = c;
-      b.textContent = labels[c];
-      mobilePins.appendChild(b);
-    });
-
-    function setCluster(value) {
-      state.cluster = state.cluster === value && value !== "all" ? "all" : value;
-      if (value === "all") state.cluster = "all";
-      document.querySelectorAll('[data-filter="cluster"]').forEach((el) => {
-        el.setAttribute("aria-pressed", String(el.dataset.value === state.cluster || (state.cluster === "all" && el.dataset.value === "all")));
-      });
-      document.querySelectorAll(".pin").forEach((el) => {
-        const on = state.cluster !== "all" && el.dataset.cluster === state.cluster;
-        el.setAttribute("aria-pressed", String(on));
-      });
+      function openFromHash() {
+        const raw = (location.hash || "").replace(/^#/, "");
+        if (!raw) return;
+        const card = document.getElementById(raw) || document.getElementById("place-" + raw);
+        if (!card || !card.classList.contains("card")) return;
+        card.classList.add("is-open");
+        const more = card.querySelector("[data-more]");
+        if (more) {
+          more.setAttribute("aria-expanded", "true");
+          more.textContent = "Свернуть";
+        }
+        card.scrollIntoView({ block: "start" });
+      }
+      window.addEventListener("hashchange", openFromHash);
       render();
-    }
-
-    function setBed(value) {
-      state.bed = state.bed === value ? "all" : value;
-      document.querySelectorAll('[data-filter="bed"]').forEach((el) => {
-        el.setAttribute("aria-pressed", String(el.dataset.value === state.bed));
-      });
-      render();
-    }
-
-    function setHer() {
-      state.her = !state.her;
-      document.querySelectorAll('[data-filter="her"]').forEach((el) => {
-        el.setAttribute("aria-pressed", String(state.her));
-      });
-      render();
-    }
-
-    document.body.addEventListener("click", (e) => {
-      const chip = e.target.closest("[data-filter]");
-      if (chip) {
-        if (chip.dataset.filter === "cluster") setCluster(chip.dataset.value);
-        if (chip.dataset.filter === "bed") setBed(chip.dataset.value);
-        if (chip.dataset.filter === "her") setHer();
-        return;
-      }
-      const pin = e.target.closest(".pin");
-      if (pin) {
-        setCluster(pin.dataset.cluster);
-        document.getElementById("catalogue").scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
-      }
-      const more = e.target.closest("[data-more]");
-      if (more) {
-        const card = more.closest(".card");
-        const open = !card.classList.contains("is-open");
-        card.classList.toggle("is-open", open);
-        more.setAttribute("aria-expanded", String(open));
-        more.textContent = open ? "Свернуть" : (more.dataset.label || "Подробнее");
-      }
-    });
-
-    document.getElementById("copy-link").addEventListener("click", async () => {
-      const url = location.href;
-      try {
-        await navigator.clipboard.writeText(url);
-        document.getElementById("copy-link").textContent = "Ссылка скопирована";
-      } catch {
-        prompt("Скопируйте ссылку", url);
-      }
-    });
-
-    function openFromHash() {
-      const raw = (location.hash || "").replace(/^#/, "");
-      if (!raw) return;
-      const card = document.getElementById(raw) || document.getElementById("place-" + raw);
-      if (!card || !card.classList.contains("card")) return;
-      card.classList.add("is-open");
-      const more = card.querySelector("[data-more]");
-      if (more) {
-        more.setAttribute("aria-expanded", "true");
-        more.textContent = "Свернуть";
-      }
-      card.scrollIntoView({ block: "start" });
-    }
-    window.addEventListener("hashchange", openFromHash);
-
-    render();
-    openFromHash();
+      openFromHash();
+    })();
   </script>
 </body>
 </html>
