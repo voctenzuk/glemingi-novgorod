@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
-  <link rel="stylesheet" href="tokens.css?v=6">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="tokens.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body data-tab="houses">
   <header class="mast">
@@ -480,10 +480,11 @@
     <section class="wrap nearby panel-nearby" id="ryadom">
       <div class="nearby__intro">
         <h2>Куда сходить с домика</h2>
-        <p>Не гид по области. Что успеть за выходные, не уезжая далеко. Кремль не пишем — вы уже в Новгороде.</p>
+        <p>Не гид по области. Что успеть за выходные, не уезжая далеко. Кремль не пишем — вы уже в Новгороде. Вкладка «Необычное» — обрывы, руины, вода, где мало людей.</p>
       </div>
       <div class="nearby__chips" role="toolbar" aria-label="Кластеры рядом">
         <button class="chip" type="button" data-filter="cluster" data-value="all" aria-pressed="true">Все</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="odd">Необычное</button>
         <button class="chip" type="button" data-filter="cluster" data-value="chechulino">Чечулино</button>
         <button class="chip" type="button" data-filter="cluster" data-value="moiseevichi">Моисеевичи</button>
         <button class="chip" type="button" data-filter="cluster" data-value="belaya-gora">Белка</button>
@@ -498,6 +499,22 @@
         <button class="chip" type="button" data-filter="cluster" data-value="batetsky">Батецкий</button>
       </div>
 
+      <article class="near" data-cluster="odd chechulino moiseevichi pyatnitsa belaya-gora retlyo korostyn russa valdai">
+        <div class="near__meta">
+          <p class="kicker">Не гид · странные красивые</p>
+          <h3>Где мало людей</h3>
+          <p class="near__stays">С домика — крюк на час-два. Не кремль и не Юрьев.</p>
+        </div>
+        <ol>
+          <li><strong>Буреги</strong> Руины собора на высоком берегу Псижи, перед впадением в Ильмень. Камень 1736–1764, пусто, ветер с озера. С Ретлё или Старой Руссы. <span class="when">крюк ~20 мин</span></li>
+          <li><strong>Село Медведь</strong> Аракчеевские казармы Стасова: арки в тумане, манеж, японский мемориал 1905 года. Живые руины, не музей. По пути Шимск → Коростынь. <span class="when">с южного берега</span></li>
+          <li><strong>Бронницкая гора</strong> Введенская церковь на холме, Стасов. С М-10 видна издалека. По легенде — капище Гостомысла. 25 км от города, ближе к Пятнице, чем к Белке. <span class="when">с М-10</span></li>
+          <li><strong>Вяжищи</strong> «Пряничный» монастырь: изразцы XVII века, львы и единороги на фасаде. 12 км на северо-запад от Новгорода — с дороги домой, не с Белки. <span class="when">полчаса от города</span></li>
+          <li><strong>Озеро Вельё</strong> Самое большое в Валдайском парке, с Рыжохи видно тайгу вокруг. Тише Валдайского озера, почти без набережной. <span class="when">с Валдая</span></li>
+          <li><strong>Перынь</strong> Исток Волхова, бывшая роща Перуна, скит. Рядом Спас на Нередице — куб 1198 года, реставраторы оставили шов, где кончается XII век и начинается 1944-й. <span class="when">от Юрьева</span></li>
+        </ol>
+      </article>
+
       <article class="near" data-cluster="chechulino moiseevichi">
         <div class="near__meta">
           <p class="kicker">Юг города · 15–30 мин</p>
@@ -508,6 +525,7 @@
           <li><strong>Юрьев монастырь</strong> Георгиевский собор 1119 года, берег Волхова. От Моисеевичей ближе, чем от Чечулина. <span class="when">полчаса</span></li>
           <li><strong>Витославлицы</strong> Музей деревянного зодчества рядом с Юрьевым. Церкви, избы, звонницы с разных концов области. <span class="when">рядом с монастырём</span></li>
           <li><strong>Рюриково городище</strong> Напротив Юрьева, через Волхов. Вид на обитель и исток реки из Ильменя. <span class="when">15 мин от Юрьева</span></li>
+          <li><strong>Перынь и Нередица</strong> Урочище, где стоял Перун, и церковь 1198 года со шрамом войны на стене. Тише Юрьева. <span class="when">10 мин от Юрьева</span></li>
           <li><strong>Речка Питьба</strong> Если остались в Чечулине: 200 м от Smaland, без города. <span class="when">пешком</span></li>
         </ol>
       </article>

@@ -517,6 +517,7 @@ body[data-tab="houses"] .panel-nearby { display: none; }
 .near[data-cluster*="lyubytino"] { --swatch: oklch(42% 0.08 250); }
 .near[data-cluster*="moshenskoe"] { --swatch: oklch(40% 0.08 170); }
 .near[data-cluster*="batetsky"] { --swatch: var(--cluster-far); }
+.near[data-cluster*="odd"] { --swatch: oklch(42% 0.1 55); }
 .near__meta .kicker {
   font-family: var(--font-outlier);
   font-size: var(--text-xs);
