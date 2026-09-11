@@ -32,7 +32,7 @@
     <section class="wrap hero">
       <div>
         <h1>Уехать из города на выходные</h1>
-        <p class="hero__lede">Мы уже в Новгороде — пригород убран. Южный берег Ильменя (Ретлё, Коростынь), Старая Русса, Валдай. Ищем двуспальную кровать, не две односпальные. Выходные разбирают быстро.</p>
+        <p class="hero__lede">Мы уже в Новгороде — пригород убран. Южный берег Ильменя, Старая Русса, Валдай, Демянск, Любытино, Мошенское. Ищем двуспальную кровать. Выходные разбирают быстро.</p>
       </div>
       <aside class="hero__aside">
         <strong>Её короткий список</strong>
@@ -74,6 +74,8 @@
           <button class="pin" data-cluster="russa" style="left:48%;top:72%" type="button" aria-pressed="false">Старая Русса</button>
           <button class="pin" data-cluster="seliger" style="left:64%;top:74%" type="button" aria-pressed="false">Селигер</button>
           <button class="pin" data-cluster="valdai" style="left:76%;top:42%" type="button" aria-pressed="false">Валдай</button>
+          <button class="pin" data-cluster="lyubytino" style="left:62%;top:28%" type="button" aria-pressed="false">Любытино</button>
+          <button class="pin" data-cluster="moshenskoe" style="left:84%;top:32%" type="button" aria-pressed="false">Мошенское</button>
         </div>
         <div class="atlas__mobile-pins" aria-label="Кластеры"></div>
       </div>
@@ -86,7 +88,10 @@
         <button class="chip" type="button" data-filter="cluster" data-value="korostyn" aria-pressed="false">Коростынь</button>
         <button class="chip" type="button" data-filter="cluster" data-value="russa" aria-pressed="false">Старая Русса</button>
         <button class="chip" type="button" data-filter="cluster" data-value="valdai" aria-pressed="false">Валдай</button>
-        <button class="chip" type="button" data-filter="cluster" data-value="seliger" aria-pressed="false">Селигер</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="seliger" aria-pressed="false">Демянск</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="lyubytino" aria-pressed="false">Любытино</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="moshenskoe" aria-pressed="false">Мошенское</button>
+        <button class="chip" type="button" data-filter="cluster" data-value="batetsky" aria-pressed="false">Батецкий</button>
         <button class="chip" type="button" data-filter="bed" data-value="double" aria-pressed="false">Двуспальная</button>
         <span class="count" id="count"></span>
       </div>
@@ -267,6 +272,75 @@
         links: [
           ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-atmosfera-seliger/"]
         ]
+      },
+      {
+        id: "seliger-club", cluster: "seliger", clusterLabel: "Демянск · Селигер",
+        name: "Seliger Club", pick: false, bed: "double",
+        place: "д. Кривая Клетка, ул. Набережная, 31А",
+        blurb: "Сканди-дома на Полновском плёсе, новгородская сторона Селигера. Завтрак, лодки. Огонь на территории запрещён. Дорога длиннее, чем до Ретлё.",
+        facts: [
+          ["water", "Полновский плёс"],
+          ["car", "Демянский округ, ~2 часа"],
+          ["forest", "Водные грили вместо мангалов"]
+        ],
+        price: "по датам", priceNote: "завтрак включён", season: "year",
+        links: [
+          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/seliger-klub/"]
+        ]
+      },
+      {
+        id: "vidomlicy", cluster: "lyubytino", clusterLabel: "Любытино · Мста",
+        name: "Видомлицы", pick: false, bed: "double",
+        place: "д. Видомлицы, Любытинский округ",
+        blurb: "10 сафари-тентов на Мсте. Есть тент с одной двуспальной — берите его, не вариант с двумя односпальными. Душ в отдельном доме. ~2 часа от Новгорода, ближе к Боровичам и Окуловке.",
+        facts: [
+          ["water", "Мста, пляж рядом"],
+          ["car", "~2 часа; электричка до Окуловки + такси"],
+          ["forest", "Круглый год, тёплые простыни"]
+        ],
+        price: "от ~5 800 ₽", priceNote: "тент с двуспальной", season: "year",
+        tel: "79052336866", telLabel: "+7 905 233-68-66",
+        extra: "Сайт glamping-vidomlicy.ru. Рейтинг 4.9.",
+        links: [
+          ["Яндекс", "https://travel.yandex.ru/hotels/novgorod-oblast/glemping-vidomlitsy/"],
+          ["novgorod.travel", "https://novgorod.travel/hotels/glemping-vidolmlitsy"]
+        ]
+      },
+      {
+        id: "chuchemlya", cluster: "moshenskoe", clusterLabel: "Мошенское",
+        name: "Chuchemlya eco village", pick: false, bed: "double",
+        place: "д. Чучемля, Мошенской округ",
+        blurb: "Три дома на лесном озере, людей вокруг нет. Green и Brown от ~7–8 000 ₽, Blue с сауной и пирсом дороже. Сапсан до Окуловки/Угловки + час на такси.",
+        facts: [
+          ["water", "Озеро Чучемля, баня на воде"],
+          ["car", "~2,5–3 часа; ближе к Боровичам, чем к Новгороду"],
+          ["forest", "Ферма, тишина, зимой работает"]
+        ],
+        price: "от 7 000 ₽", priceNote: "дом у озера", season: "year",
+        tel: "79268918546", telLabel: "+7 926 891-85-46",
+        extra: "chuchemlya.com · welcome@chuchemlya.com",
+        links: [
+          ["Сайт", "https://chuchemlya.com/"],
+          ["novgorod.travel", "https://novgorod.travel/hotels/chuchemlya-eco-village"]
+        ]
+      },
+      {
+        id: "pole", cluster: "batetsky", clusterLabel: "Батецкий · Луга",
+        name: "Поле Бесконечности", pick: false, bed: "double",
+        place: "д. Большой Волок, Батецкий округ",
+        blurb: "Семь шатров на 37 га у Луги. Сезон май–сентябрь — к середине сентября могут уже закрыться. Ближе к Петербургу, чем к востоку области.",
+        facts: [
+          ["water", "Река Луга, сапы"],
+          ["car", "Запад области, ~1,5 часа от Новгорода"],
+          ["forest", "Поле, типи, печь-буржуйка"]
+        ],
+        price: "от 2 500 ₽", priceNote: "шатёр, только лето", season: "summer",
+        tel: "79213489884", telLabel: "+7 921 348-98-84",
+        extra: "VK: vk.com/8glamp",
+        links: [
+          ["novgorod.travel", "https://novgorod.travel/hotels/glemping-pole-beskonechnosti"],
+          ["ВКонтакте", "https://vk.com/8glamp"]
+        ]
       }
     ];
 
@@ -319,8 +393,8 @@
     catalogue.innerHTML = PLACES.map(cardHTML).join("");
 
     const mobilePins = document.querySelector(".atlas__mobile-pins");
-    ["retlyo", "korostyn", "russa", "valdai", "seliger"].forEach((c) => {
-      const labels = { retlyo: "Ретлё", korostyn: "Коростынь", russa: "Старая Русса", valdai: "Валдай", seliger: "Селигер" };
+    ["retlyo", "korostyn", "russa", "valdai", "seliger", "lyubytino", "moshenskoe", "batetsky"].forEach((c) => {
+      const labels = { retlyo: "Ретлё", korostyn: "Коростынь", russa: "Старая Русса", valdai: "Валдай", seliger: "Демянск", lyubytino: "Любытино", moshenskoe: "Мошенское", batetsky: "Батецкий" };
       const b = document.createElement("button");
       b.className = "chip";
       b.type = "button";
